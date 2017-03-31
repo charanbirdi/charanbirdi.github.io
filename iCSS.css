@@ -2,7 +2,7 @@
   margin: 0px;
   box-sizing: border-box;
   font-weight: 200;
-  text-align: center;
+  //text-align: center;
   font-family: 'Open Sans',Arial,Helvetica Neue,sans-serif;
 }
 
@@ -15,7 +15,7 @@ html, body {
 
 
 body {
-  text-align: center;
+  //text-align: center;
   color: #404348;
 }
 
@@ -57,6 +57,7 @@ p, small {
   min-height: 200px;
   max-width: 300px;
   max-height: 300px;
+  user-select: none;
 }
 
 .col-sm-8 {
@@ -75,6 +76,8 @@ p, small {
   background: #ddd;
   padding: 20px 0 40px 0;
   width: 100%;
+  //position:relative;
+  clear: both;
 }
 
 #list1 li {
@@ -126,7 +129,7 @@ canvas {
 #work h1 {font-size: 2em; margin: 0 0 35px; text-align: left; }
 #work h3 {font-size: 1.2em; margin-top: 40px; text-align: left; }
 #work h4 {font-size: 0.7em; margin-top: 0; margin-bottom: 10px; text-align: left; }
-.work1 ul li {font-size: 0.8em; text-align: left; }
+.work1 ul li {font-size: 0.9em; text-align: left; }
 
 
 .clearfix {
@@ -134,11 +137,13 @@ canvas {
   background-color: white;
 }
 
-
-#skills { padding: 30px 20px 30px; color: #9c9c9c; background: #363646; }
+#skills { float: left; width: 100%; padding: 30px 20px 30px; color: #9c9c9c; background: #363646; display: block;}
 #skills h1 {font-size: 2em; margin: 0 0 35px; text-align: left; }
+#skills h2 {font-size: 1.5em; margin: 0 0 25px; text-align: left; }
 #skills h3 {font-size: 1.2em; margin-top: 40px; text-align: left; }
 #skills h4 {font-size: 0.7em; margin-top: 0; margin-bottom: 10px; text-align: left; }
 
-#skills .bar { width: 100%; font-size: 0.9em; font-weight: 400; text-transform: uppercase; letter-spacing: 2px; text-align: left; margin-bottom: 15px; color: #727272; }
-// #skills .bar i { font-size: 0.7em; color: #5e5e5e; margin: 0 7px; }
+#bar1 div, #bar2 div { margin: 7px 0; }
+
+#bar1 { float: left; width: 70%; font-size: 0.9em; font-weight: 400; text-transform: uppercase; letter-spacing: 2px; text-align: left; margin-bottom: 15px; color: #727272; }
+#bar2 { float: right; width: 30%; font-size: 0.9em; font-weight: 400; text-transform: uppercase; letter-spacing: 2px; text-align: left; margin-bottom: 15px; color: #727272; }
