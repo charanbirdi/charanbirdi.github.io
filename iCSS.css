@@ -1,10 +1,14 @@
 * {
   margin: 0px;
   box-sizing: border-box;
-  font-weight: 200;
+  font-weight: 300;
   text-align: center;
   font-family: 'Open Sans',Arial,Helvetica Neue,sans-serif;
+  letter-spacing: 0.4px;
+  //line-height: 1.0;
 }
+
+li { font-size: 0.9em; text-align: left; margin-bottom: 7px; }
 
 html, body {
   height: 100%;
@@ -27,6 +31,12 @@ p, small {
   margin: 10px 10px 5px 10px;
 }
 
+a {
+    color: #428bca;
+    text-decoration: none;
+    text-align: left;
+}
+
 .header {
   position: fixed;
   z-index: 5;
@@ -36,22 +46,31 @@ p, small {
 .hero {
   height: 67%;
   width: 100%;
-  background: #303030;
-  /* fallback for old browsers */
-  //background: -webkit-linear-gradient(right, #303030, #d3d3d3);
-  //background: linear-gradient(to left, #303030, #d3d3d3);
 }
 
 #about {
-  padding: 0% 10% 2% 10%;
+  padding: 5% 10% 2% 10%;
 }
 
-.col-sm-4 {
-  margin: 20px 20px 0 0;
+#about div h1 {
+  padding: 4% 10% 1% 10%;
 }
 
-.col-sm-4 img {
-  //float: left;
+#about p {
+    color: #666666;
+    margin: 0 auto;
+    font-size: 1.2em;
+    letter-spacing: 0.04em;
+    line-height: 1.5em;
+    font-weight: 300;
+}
+
+
+
+
+#icharan img {
+  width: 25%;
+  border-radius: 50%;
   padding: 10px;
   min-width: 200px;
   min-height: 200px;
@@ -60,38 +79,6 @@ p, small {
   user-select: none;
 }
 
-.col-sm-8 {
-  display:grid;
-  text-align: left;
-}
-
-
-#project-headings tr th {
-  text-align: center;
-}
-
-
-
-.vba-quotes {
-  background: #ddd;
-  padding: 20px 0 40px 0;
-  width: 100%;
-  //position:relative;
-  clear: both;
-}
-
-#list1 li {
-  text-align: left;
-  font-size: 0.8em;
-}
-
-.vba {
-  text-align: left;
-}
-
-.left-karo {
-  text-align: left;
-}
 
 canvas {
   display: block;
@@ -117,17 +104,16 @@ canvas {
   z-index: 999;
   background: none;
   position: relative;
-  padding: 15px 5px 5px 5px;
+  padding: 5% 1% 1% 0;
   user-select: none;
 }
 
-#intro h1 {
-  font-size: 2.5em;
-}
+#intro h1 { font-size: 3em; font-weight: 400; }
+#intro h4 { font-size: 1.2em; font-weight: 400; }
 
 #work { padding: 30px 20px 30px; color: #9c9c9c; background: #363636; }
-#work h1 {font-size: 2em; margin: 0 0 35px; text-align: left; }
-#work h3 {font-size: 1.2em; margin-top: 40px; text-align: left; }
+#work h1 {font-size: 2em; margin: 35px 0 35px; text-align: left; }
+#work h3 {font-size: 1.2em; margin-top: 40px; margin-bottom: 20px; text-align: left; color: #428bca; }
 #work h4 {font-size: 0.7em; margin-top: 0; margin-bottom: 10px; text-align: left; }
 .work1 ul li {font-size: 0.9em; text-align: left; }
 
@@ -144,6 +130,53 @@ canvas {
 #skills h4 {font-size: 0.7em; margin-top: 0; margin-bottom: 10px; text-align: left; }
 
 #bar1 div, #bar2 div { margin: 7px 0; text-align: left;}
+#bar1 { float: left; width: 90%; font-size: 0.9em; font-weight: 400; text-transform: uppercase; letter-spacing: 2px; text-align: left; margin-bottom: 15px; color: #727272; }
+#bar2 { float: left; width: 90%; font-size: 0.9em; font-weight: 400; text-transform: uppercase; letter-spacing: 2px; text-align: left; margin-bottom: 15px; color: #727272; }
 
-#bar1 { float: left; width: 70%; font-size: 0.9em; font-weight: 400; text-transform: uppercase; letter-spacing: 2px; text-align: left; margin-bottom: 15px; color: #727272; }
-#bar2 { float: right; width: 30%; font-size: 0.9em; font-weight: 400; text-transform: uppercase; letter-spacing: 2px; text-align: left; margin-bottom: 15px; color: #727272; }
+
+.vba-quotes { background: #ddd; padding: 20px 0 40px 0; width: 100%; clear: both; }
+.vba-quotes h1 { padding: 20px 0 15px 0; }
+#list1 li {  text-align: left; font-size: 0.9em; }
+.left-karo {text-align: left; margin-top: 5px; margin-bottom: 15px; }
+
+
+
+@media only screen and (min-width: 480px) {
+  #skills {background-color: black; }
+  #bar1 { float: left; width: 68%; }
+  #bar2 { float: right; width: 28%; }
+}
+
+
+
+#interests * {text-align: center; }
+#interests { padding-top: 70px; padding-bottom: 105px; background: white; position: relative; text-align: center; border-color: white; position: relative; }
+#interests h1 { margin-bottom: 35px; font-size: 2em; font-weight: 300; color: gray; letter-spacing: 0.2em; }
+#interests .bold { font-weight: 600; }
+#interests a { color: black; padding-bottom: 2px; border-bottom: 1px solid black; }
+#interests a:hover { border-bottom: 1px dashed black; }
+#interests i { font-size: 4em; color: #737373; }
+#interests .row:last-child { border-top: 1px solid #ebebeb; }
+#interests .row .column { padding: 30px; border-left: 1px solid #ebebeb; }
+#interests .row .column:first-of-type { border-left: none; }
+#interests h3 { font-weight: 400; color: #4c4c4c; letter-spacing: 0.2em; font-size: 1.4em; padding-bottom: 10px; }
+#interests p { color: #595959; padding-top: 10px; padding-bottom: 10px; font-size: 1.1em; letter-spacing: 1px; font-weight: 300; font-size: 15px; line-height: 25px; }
+#interests .dash { background: lightgray; }
+
+
+
+
+#footer { padding: 65px 0 150px; background: #ECECEC; text-align: center; font-weight: 300; }
+#footer h3 { font-size: 1em; margin-bottom: 30px; color: gray; text-transform: uppercase; }
+#footer h4 { margin-bottom: 25px; }
+#footer ul { list-style: none; }
+#footer ul li { display: inline-block; min-width: 50px; min-height: 75px; margin: 0 30px; padding: 0 30px; position: relative; }
+#footer ul li a {color: lightgray;}
+#footer ul li a p { position: absolute; font-weight: 400; letter-spacing: 1px; display: none; left: 0; right: 0; margin: auto; margin-top: 10px; }
+#footer ul .email:hover a { color: red; }
+#footer ul .email:hover p { color: red; display: inline;}
+#footer ul .twitter:hover a { color: #32CCFE; }
+#footer ul .codepen:hover a { color: black; }
+#footer .license { font-family: Georgia, sans-serif; color: #bdbdbd; letter-spacing: 1px; font-size: 13px; margin-top: 15px; }
+#footer .license a { color: inherit; padding-bottom: 3px; border-bottom: 1px dotted #bdbdbd; }
+#footer .license a:hover { border-bottom: 1px solid #bdbdbd; }
