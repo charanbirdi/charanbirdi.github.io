@@ -4,7 +4,11 @@
   font-weight: 300;
   text-align: center;
   font-family: 'Open Sans',Arial,Helvetica Neue,sans-serif;
+  letter-spacing: 0.4px;
+  //line-height: 1.0;
 }
+
+li { font-size: 0.9em; text-align: left; margin-bottom: 7px; }
 
 html, body {
   height: 100%;
@@ -36,22 +40,31 @@ p, small {
 .hero {
   height: 67%;
   width: 100%;
-  background: #303030;
-  /* fallback for old browsers */
-  //background: -webkit-linear-gradient(right, #303030, #d3d3d3);
-  //background: linear-gradient(to left, #303030, #d3d3d3);
 }
 
 #about {
-  padding: 0% 10% 2% 10%;
+  padding: 5% 10% 5% 10%;
 }
 
-.col-sm-4 {
-  margin: 20px 20px 0 0;
+#about div h1 {
+  padding: 5% 10% 1% 10%;
 }
 
-.col-sm-4 img {
-  //float: left;
+#about p {
+    color: #666666;
+    margin: 0 auto;
+    font-size: 1.2em;
+    letter-spacing: 0.04em;
+    line-height: 1.5em;
+    font-weight: 300;
+}
+
+
+
+
+#icharan img {
+  width: 25%;
+  border-radius: 50%;
   padding: 10px;
   min-width: 200px;
   min-height: 200px;
@@ -60,37 +73,6 @@ p, small {
   user-select: none;
 }
 
-.col-sm-8 {
-  display:grid;
-  text-align: left;
-}
-
-
-#project-headings tr th {
-  text-align: center;
-}
-
-
-
-.vba-quotes {
-  background: #ddd;
-  padding: 20px 0 40px 0;
-  width: 100%;
-  clear: both;
-}
-
-#list1 li {
-  text-align: left;
-  font-size: 0.8em;
-}
-
-.vba {
-  text-align: left;
-}
-
-.left-karo {
-  text-align: left;
-}
 
 canvas {
   display: block;
@@ -126,7 +108,7 @@ canvas {
 
 #work { padding: 30px 20px 30px; color: #9c9c9c; background: #363636; }
 #work h1 {font-size: 2em; margin: 0 0 35px; text-align: left; }
-#work h3 {font-size: 1.2em; margin-top: 40px; text-align: left; }
+#work h3 {font-size: 1.2em; margin-top: 40px; text-align: left; color: #428bca; }
 #work h4 {font-size: 0.7em; margin-top: 0; margin-bottom: 10px; text-align: left; }
 .work1 ul li {font-size: 0.9em; text-align: left; }
 
@@ -143,15 +125,19 @@ canvas {
 #skills h4 {font-size: 0.7em; margin-top: 0; margin-bottom: 10px; text-align: left; }
 
 #bar1 div, #bar2 div { margin: 7px 0; text-align: left;}
-
 #bar1 { float: left; width: 90%; font-size: 0.9em; font-weight: 400; text-transform: uppercase; letter-spacing: 2px; text-align: left; margin-bottom: 15px; color: #727272; }
 #bar2 { float: left; width: 90%; font-size: 0.9em; font-weight: 400; text-transform: uppercase; letter-spacing: 2px; text-align: left; margin-bottom: 15px; color: #727272; }
 
 
+.vba-quotes { background: #ddd; padding: 20px 0 40px 0; width: 100%; clear: both; }
+.vba-quotes h1 { padding: 20px 0 15px 0; }
+#list1 li {  text-align: left; font-size: 0.9em; }
+.left-karo {text-align: left; margin-top: 5px; margin-bottom: 15px; }
 
 
-@media only screen and (min-width: 480px) {
+
+@media only screen and (min-width: 650px) {
   #skills {background-color: black; }
   #bar1 { float: left; width: 70%; }
-  #bar2 { float: right; width: 30%;
+  #bar2 { float: right; width: 30%; }
 }
