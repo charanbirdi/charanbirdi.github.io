@@ -31,6 +31,12 @@ p, small {
   margin: 10px 10px 5px 10px;
 }
 
+a {
+    color: #428bca;
+    text-decoration: none;
+    text-align: left;
+}
+
 .header {
   position: fixed;
   z-index: 5;
@@ -106,8 +112,8 @@ canvas {
 #intro h4 { font-size: 1.2em; font-weight: 400; }
 
 #work { padding: 30px 20px 30px; color: #9c9c9c; background: #363636; }
-#work h1 {font-size: 2em; margin: 0 0 35px; text-align: left; }
-#work h3 {font-size: 1.2em; margin-top: 40px; text-align: left; color: #428bca; }
+#work h1 {font-size: 2em; margin: 35px 0 35px; text-align: left; }
+#work h3 {font-size: 1.2em; margin-top: 40px; margin-bottom: 20px; text-align: left; color: #428bca; }
 #work h4 {font-size: 0.7em; margin-top: 0; margin-bottom: 10px; text-align: left; }
 .work1 ul li {font-size: 0.9em; text-align: left; }
 
@@ -135,8 +141,8 @@ canvas {
 
 
 
-@media only screen and (min-width: 650px) {
+@media only screen and (min-width: 480px) {
   #skills {background-color: black; }
-  #bar1 { float: left; width: 70%; }
-  #bar2 { float: right; width: 30%; }
+  #bar1 { float: left; width: 68%; }
+  #bar2 { float: right; width: 28%; }
 }
