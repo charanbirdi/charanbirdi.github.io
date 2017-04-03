@@ -1,7 +1,7 @@
 * {
   margin: 0px;
   box-sizing: border-box;
-  font-weight: 200;
+  font-weight: 300;
   text-align: center;
   font-family: 'Open Sans',Arial,Helvetica Neue,sans-serif;
 }
@@ -76,7 +76,6 @@ p, small {
   background: #ddd;
   padding: 20px 0 40px 0;
   width: 100%;
-  //position:relative;
   clear: both;
 }
 
@@ -145,5 +144,14 @@ canvas {
 
 #bar1 div, #bar2 div { margin: 7px 0; text-align: left;}
 
-#bar1 { float: left; width: 70%; font-size: 0.9em; font-weight: 400; text-transform: uppercase; letter-spacing: 2px; text-align: left; margin-bottom: 15px; color: #727272; }
-#bar2 { float: right; width: 30%; font-size: 0.9em; font-weight: 400; text-transform: uppercase; letter-spacing: 2px; text-align: left; margin-bottom: 15px; color: #727272; }
+#bar1 { float: left; width: 90%; font-size: 0.9em; font-weight: 400; text-transform: uppercase; letter-spacing: 2px; text-align: left; margin-bottom: 15px; color: #727272; }
+#bar2 { float: left; width: 90%; font-size: 0.9em; font-weight: 400; text-transform: uppercase; letter-spacing: 2px; text-align: left; margin-bottom: 15px; color: #727272; }
+
+
+
+
+@media only screen and (min-width: 480px) {
+  #skills {background-color: black; }
+  #bar1 { float: left; width: 70%; }
+  #bar2 { float: right; width: 30%;
+}
