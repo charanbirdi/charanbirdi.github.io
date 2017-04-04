@@ -128,18 +128,16 @@ canvas {
 
 #skills { float: left; width: 100%; padding: 30px 20px 30px; color: #9c9c9c; background: #363646; display: block;}
 #skills h1 {font-size: 2em; margin: 0 0 35px; text-align: left; }
-#skills h2 {font-size: 1.5em; margin: 0 0 25px; text-align: left; }
-#skills h3 {font-size: 1.2em; margin-top: 40px; text-align: left; }
-#skills h4 {font-size: 0.7em; margin-top: 0; margin-bottom: 10px; text-align: left; }
+#skills h2 {font-size: 1.5em; margin: 0 20px 25px; text-align: left; }
 
-#bar1 div, #bar2 div { margin: 7px 0; text-align: left;}
+#bar1 div, #bar2 div { margin: 7px 20px; text-align: left;}
 #bar1 { float: left; width: 90%; font-size: 0.9em; font-weight: 400; text-transform: uppercase; letter-spacing: 2px; text-align: left; margin-bottom: 15px; color: #727272; }
 #bar2 { float: left; width: 90%; font-size: 0.9em; font-weight: 400; text-transform: uppercase; letter-spacing: 2px; text-align: left; margin-bottom: 15px; color: #727272; }
 
 
-.vba-quotes { background: #ddd; padding: 20px 0 40px 0; width: 100%; clear: both; }
-.vba-quotes h1 { padding: 20px 0 15px 0; }
-#list1 li {  text-align: left; font-size: 0.9em; }
+.vba-quotes { background: #ddd; padding: 30px 20px 30px; width: 100%; clear: both; }
+.vba-quotes h1 { font-size: 2em; margin: 35px 0 35px; text-align: left; }
+#list1 li {font-size: 0.9em; text-align: left; }
 .left-karo {text-align: left; margin-top: 5px; margin-bottom: 15px; }
 
 
@@ -164,11 +162,10 @@ canvas {
 #footer h4 { margin-bottom: 25px; }
 #footer ul { list-style: none; }
 #footer ul li { display: inline-block; min-width: 50px; min-height: 75px; margin: 0 30px; padding: 0 30px; position: relative; }
-#footer ul li a {color: lightgray;}
+#footer ul li a {color: lightgray; }
 #footer ul li a p { position: absolute; font-weight: 400; letter-spacing: 1px; display: none; left: 0; right: 0; margin: auto; margin-top: 10px; }
-#footer .license { font-family: Georgia, sans-serif; color: #bdbdbd; letter-spacing: 1px; font-size: 15px; margin-top: 20px; }
-//#footer .license { color: inherit; padding-bottom: 3px; border-bottom: 1px dotted #bdbdbd; }
-#footer .license:hover { border-bottom: 1px solid #bdbdbd; color: #9c9c9c;}
+#footer .license { font-family: Georgia, sans-serif; color: #bdbdbd; letter-spacing: 1px; font-size: 12px; margin-top: 20px; }
+#footer .license:hover { border-bottom: 0.6px solid #bdbdbd; color: #9c9c9c; }
 
 
 
