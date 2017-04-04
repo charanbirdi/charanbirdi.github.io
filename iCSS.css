@@ -13,8 +13,6 @@ li { font-size: 0.9em; text-align: left; margin-bottom: 7px; }
 html, body {
   height: 100%;
   width: 100%;
-  //background-color: #F0F0F0;
-  //margin: 5px;
 }
 
 .pulse {color: #428bca; height: auto;}
@@ -38,6 +36,7 @@ a {
     //text-decoration: none;
     text-align: left;
     text-decoration: underline;
+    letter-spacing: 1.5px;
 }
 
 .dash { height: 1px; width: 30%; background: black; margin: 20px auto; }
@@ -99,6 +98,7 @@ h5 {
   min-height: 100px;
   max-width: 268px;
   max-height: 120px;
+  opacity: 0.7;
 }
 
 
