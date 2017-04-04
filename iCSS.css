@@ -92,11 +92,11 @@ h5 {
     font-weight: 400;
 }
 
-.logos {
+#logo img {
   width: 25%;
   padding: 10px;
-  min-width: 134px;
-  min-height: 60px;
+  min-width: 223px;
+  min-height: 100px;
   max-width: 268px;
   max-height: 120px;
 }
