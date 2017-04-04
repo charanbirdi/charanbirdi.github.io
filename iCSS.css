@@ -17,6 +17,8 @@ html, body {
   //margin: 5px;
 }
 
+.pulse {color: #428bca; height: auto;}
+
 
 body {
   //text-align: center;
@@ -33,9 +35,12 @@ p, small {
 
 a {
     color: #428bca;
-    text-decoration: none;
+    //text-decoration: none;
     text-align: left;
+    text-decoration: underline;
 }
+
+.dash { height: 1px; width: 30%; background: black; margin: 20px auto; }
 
 .header {
   position: fixed;
@@ -79,6 +84,23 @@ a {
   user-select: none;
 }
 
+h5 {
+    font-style: normal;
+    //text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+.logos {
+  width: 25%;
+  padding: 10px;
+  min-width: 134px;
+  min-height: 60px;
+  max-width: 268px;
+  max-height: 120px;
+}
+
 
 canvas {
   display: block;
@@ -100,16 +122,18 @@ canvas {
 }
 
 #intro {
-  color: rgb(156, 156, 156);
-  z-index: 999;
+  width: 100%;
+  height:0%;
+  color: white;
+  z-index: 9999;
   background: none;
   position: relative;
-  padding: 5% 1% 1% 0;
+  padding: 2% 1% 1% 0;
   user-select: none;
 }
 
-#intro h1 { font-size: 3em; font-weight: 400; }
-#intro h4 { font-size: 1.2em; font-weight: 400; }
+#intro h1 { font-size: 2.0em; font-weight: 200; padding-bottom: 0px; }
+#intro h4 { font-size: 1.0em; font-weight: 200; }
 
 #work { padding: 30px 20px 30px; color: #9c9c9c; background: #363636; }
 #work h1 {font-size: 2em; margin: 35px 0 35px; text-align: left; }
@@ -117,62 +141,52 @@ canvas {
 #work h4 {font-size: 0.7em; margin-top: 0; margin-bottom: 10px; text-align: left; }
 .work1 ul li {font-size: 0.9em; text-align: left; }
 
-
-.clearfix {
-  padding: 5px;
-  background-color: white;
-}
-
-#skills { float: left; width: 100%; padding: 30px 20px 30px; color: #9c9c9c; background: #363646; display: block;}
+#skills { float: left; width: 100%; padding: 30px 20px 30px; color: #9c9c9c; background-color: black;}
 #skills h1 {font-size: 2em; margin: 0 0 35px; text-align: left; }
-#skills h2 {font-size: 1.5em; margin: 0 0 25px; text-align: left; }
-#skills h3 {font-size: 1.2em; margin-top: 40px; text-align: left; }
-#skills h4 {font-size: 0.7em; margin-top: 0; margin-bottom: 10px; text-align: left; }
+#skills h2 {font-size: 1.5em; margin: 0 20px 25px; text-align: left; }
 
-#bar1 div, #bar2 div { margin: 7px 0; text-align: left;}
-#bar1 { float: left; width: 90%; font-size: 0.9em; font-weight: 400; text-transform: uppercase; letter-spacing: 2px; text-align: left; margin-bottom: 15px; color: #727272; }
-#bar2 { float: left; width: 90%; font-size: 0.9em; font-weight: 400; text-transform: uppercase; letter-spacing: 2px; text-align: left; margin-bottom: 15px; color: #727272; }
+#bar1 div, #bar2 div { margin: 7px 20px; text-align: left;}
+#bar1 { float: left; width: 95%; font-size: 0.9em; text-transform: uppercase; letter-spacing: 2px; text-align: left; margin-bottom: 15px; color: #727272; }
+#bar2 { float: left; width: 95%; font-size: 0.9em; text-transform: uppercase; letter-spacing: 2px; text-align: left; margin-bottom: 15px; color: #727272; }
 
 
-.vba-quotes { background: #ddd; padding: 20px 0 40px 0; width: 100%; clear: both; }
-.vba-quotes h1 { padding: 20px 0 15px 0; }
-#list1 li {  text-align: left; font-size: 0.9em; }
+.vba-quotes { background: #ddd; padding: 30px 20px 30px; width: 100%; clear: both; }
+.vba-quotes h1 { font-size: 2em; margin: 35px 0 35px; text-align: left; }
+#list1 li {font-size: 0.9em; text-align: left; }
 .left-karo {text-align: left; margin-top: 5px; margin-bottom: 15px; }
-
-
-
-@media only screen and (min-width: 480px) {
-  #skills {background-color: black; }
-  #bar1 { float: left; width: 68%; }
-  #bar2 { float: right; width: 28%; }
-}
 
 
 
 #interests * {text-align: center; }
 #interests { padding-top: 70px; padding-bottom: 105px; background: white; position: relative; text-align: center; border-color: white; position: relative; }
-#interests h1 { margin-bottom: 35px; font-size: 2em; font-weight: 300; color: gray; letter-spacing: 0.2em; }
+#interests h1 { margin-bottom: 35px; font-size: 1.5em; font-weight: 300; color: gray; letter-spacing: 0.2em; }
 #interests .bold { font-weight: 600; }
-#interests a { color: black; padding-bottom: 2px; border-bottom: 1px solid black; }
-#interests a:hover { border-bottom: 1px dashed black; }
+//#interests a { color: black; padding-bottom: 2px; border-bottom: 1px solid black; }
+//#interests a:hover { border-bottom: 1px dashed black; }
 #interests i { font-size: 4em; color: #737373; }
 #interests .row:last-child { border-top: 1px solid #ebebeb; }
 #interests .row .column { padding: 30px; border-left: 1px solid #ebebeb; }
 #interests .row .column:first-of-type { border-left: none; }
 #interests h3 { font-weight: 400; color: #4c4c4c; letter-spacing: 0.2em; font-size: 1.4em; padding-bottom: 10px; }
-#interests p { color: #595959; padding-top: 10px; padding-bottom: 10px; font-size: 1.1em; letter-spacing: 1px; font-weight: 300; font-size: 15px; line-height: 25px; }
+#interests p { color: #595959; padding-top: 0px; padding-bottom: 6px; font-size: 1.1em; letter-spacing: 1px; font-weight: 300; font-size: 15px; line-height: 25px; }
 #interests .dash { background: lightgray; }
 
 
-
-
-#footer { padding: 65px 0 150px; background: #ECECEC; text-align: center; font-weight: 300; }
+#footer { padding: 65px 0 100px; background: #ECECEC; text-align: center; font-weight: 300; }
 #footer h3 { font-size: 1em; margin-bottom: 30px; color: gray; text-transform: uppercase; }
 #footer h4 { margin-bottom: 25px; }
-#footer ul { list-style: none; }
+#footer ul { list-style: none; padding: 0; }
 #footer ul li { display: inline-block; min-width: 50px; min-height: 75px; margin: 0 30px; padding: 0 30px; position: relative; }
-#footer ul li a {color: lightgray;}
+#footer ul li a {color: lightgray; }
 #footer ul li a p { position: absolute; font-weight: 400; letter-spacing: 1px; display: none; left: 0; right: 0; margin: auto; margin-top: 10px; }
-#footer .license { font-family: Georgia, sans-serif; color: #bdbdbd; letter-spacing: 1px; font-size: 13px; margin-top: 15px; }
-#footer .license a { color: inherit; padding-bottom: 3px; border-bottom: 1px dotted #bdbdbd; }
-#footer .license a:hover { border-bottom: 1px solid #bdbdbd; }
+#footer .license { font-family: Georgia, sans-serif; color: #bdbdbd; letter-spacing: 1px; font-size: 12px; margin-top: 20px; }
+#footer .license:hover { border-bottom: 0.6px solid #bdbdbd; color: #9c9c9c; }
+
+
+@media screen and (min-width: 1080px) {
+  //#skills {background-color: "black"; }
+  #bar1 { float: left; width: 45%; }
+  #bar2 { float: right; width: 45%; }
+
+  .container {width: 70%; margin: auto; }
+}

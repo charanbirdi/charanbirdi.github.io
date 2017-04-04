@@ -2,7 +2,9 @@
 <html>
 	<head>
 		<title>Resume</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link href="iCSS.css" rel="stylesheet">
+		<link href="CSS/normalize.css" rel="stylesheet">
     <script src="scripts/jquery-3.1.1.min.js"></script>
     <script src="iJS.js"></script>
 		<script src="scripts/particles.js"></script>
@@ -17,7 +19,7 @@
 	<div id="particles-js">
 	</div>
 	<div id=intro>
-		<h1>Hello, I'm Charan</h1>
+		<h1>Sat Sri Akal, I'm Charan</h1>
 		<h4>I am an Electrical Engineer who <span class="pulse">&hearts;</span> to code.</h4>
 	</div>
 </section>
@@ -25,7 +27,7 @@
 
 
 <section id="about">
-  <div class="row">
+  <div class="container">
 
 		<div id="icharan">
       <img src="images/icharan.JPG"/>
@@ -33,7 +35,10 @@
 
 		<div>
       <h1>About</h1>
-      <p> I have more than 9 years of experience of working as an Electrical Engineer in the Oil & Gas Industry during which I have helped in executing projects in different countries. I also have the experience of working overseas and worked for more than 1 year at Samsung Engineering Head Office in Seoul, South Korea.</p>
+			<p> I have a total of </p>
+			<p id="exp"></p>
+			<p> experience as an Electrical Engineer in the Oil & Gas Industry during which I have helped in executing projects in different countries. I also have the overseas experience of more than 1 year at Samsung Engineering Head Office in Seoul, South Korea.</p>
+			<p> I am self taught programmer and <span class="pulse" color="red">&hearts;</span> to explore the application of Machine Learning in Electrical Engineering.</p>
 			<h1 class="mb-1">Born</h1>
 			<small>8<sup>th</sup> Feb 1984</small>
 			<p class="mb-1">Born in Dhuri, Punjab</p>
@@ -41,13 +46,21 @@
 			<p class="mb-1">Went to attend <em>Thapar Institute of Engineering and Technology</em>, Patiala and graduated in Electrical Engineering in 2007. </p>
     </div>
 
+
+		<br><br>
+  <div class="dash animated fadeIn"></div>
+       <h5>Place I'm working at:</h5>
+       <p>
+           <img class="logos" src="images/samsung.png">
+       </p>
+
+
   </div>
 </section>
 
 
-
 	<section id="work">
-				  <div>
+				  <div class="container">
 				    <h1>Electrical Projects</h1>
 
 				    <div class="work1">
@@ -83,10 +96,11 @@
 
 
 	<section id="skills">
+		<div class="container">
 
 				    <h1>Skills</h1>
 
-				    <div class="left col-md-8">
+				    <div class="left col-md-6">
 				      <div id="bar1">
 								<h2>ELECTRICAL</h2>
 				        <div class="bar concealed visible animated fadeInRight">Detailed System Study</div>
@@ -102,27 +116,28 @@
 				      </div>
 				    </div>
 
-						<div class="right col-md-4">
+						<div class="right col-md-6">
 				      <div id="bar2">
 								<h2>SOFTWARE</h2>
-				        <div class="bar concealed visible animated fadeInRight">VBA for excel</div>
-								<div class="bar concealed visible animated fadeInRight">Java</div>
-								<div class="bar concealed visible animated fadeInRight">Android Development</div>
-				        <div class="bar concealed visible animated fadeInRight">HTML5, CSS3</div>
-				        <div class="bar concealed visible animated fadeInRight">Javascript</div>
-				        <div class="bar concealed visible animated fadeInRight">SQLite</div>
-								<div class="bar concealed visible animated fadeInRight">Python (basic)</div>
-				        <div class="bar concealed visible animated fadeInRight">Ruby On Rails (basic)</div>
+				        <div class="bar concealed visible animated fadeInRight">ETAP</div>
+								<div class="bar concealed visible animated fadeInRight">VBA FOR EXCEL</div>
+								<div class="bar concealed visible animated fadeInRight">MICROSOFT OFFICE</div>
+				        <div class="bar concealed visible animated fadeInRight">AUTOCAD</div>
+				        <div class="bar concealed visible animated fadeInRight">PHOTOLUX</div>
+				        <div class="bar concealed visible animated fadeInRight">NAVISWORKS BASICS</div>
+								<div class="bar concealed visible animated fadeInRight">SP3D Basics</div>
 				      </div>
 				    </div>
 
+		</div>
 </section>
 
 
 
 
       <article class="vba-quotes">
-        <h1 class="vba">AUTOMATION BY VBA IN EXCEL:</h1>
+				<div class="container">
+        <h1 class="vba">Automation by VBA in Excel</h1>
 
             <div>
 							<p class="left-karo"> Developed algorithm and coding in Visual Basic for Application for the following calculations/schedules:</p>
@@ -134,12 +149,8 @@
                 <li>Various BOM i.e. Gland BOM, Conduit BOM etc.</li>
               </ul>
             </div>
-
-						<p class="text-center">My Android App <a href="https://play.google.com/store/apps/details?id=com.chakviapps.hospito" target="_blank">Click here</a> </p>
+					</div>
       </article>
-
-
-
 
 
 
@@ -148,7 +159,7 @@
 <section id="interests">
 <div class="container">
 
-<h1 class="tabloid">What I do</h1>
+<h1 class="tabloid">What I do other than Electrical Engineering</h1>
 
 <div class="row">
 <div class="concealed visible animated fadeInUp">
@@ -159,19 +170,20 @@
 	<h3>Development</h3>
 
 	<div class="SVGicon2">
-		<svg style="width:120px;height:120px" viewBox="0 0 24 24">
-	    <path fill="#428bca" d="M15,5H14V4H15M10,5H9V4H10M15.53,2.16L16.84,0.85C17.03,0.66 17.03,0.34 16.84,0.14C16.64,-0.05 16.32,-0.05 16.13,0.14L14.65,1.62C13.85,1.23 12.95,1 12,1C11.04,1 10.14,1.23 9.34,1.63L7.85,0.14C7.66,-0.05 7.34,-0.05 7.15,0.14C6.95,0.34 6.95,0.66 7.15,0.85L8.46,2.16C6.97,3.26 6,5 6,7H18C18,5 17,3.25 15.53,2.16M20.5,8A1.5,1.5 0 0,0 19,9.5V16.5A1.5,1.5 0 0,0 20.5,18A1.5,1.5 0 0,0 22,16.5V9.5A1.5,1.5 0 0,0 20.5,8M3.5,8A1.5,1.5 0 0,0 2,9.5V16.5A1.5,1.5 0 0,0 3.5,18A1.5,1.5 0 0,0 5,16.5V9.5A1.5,1.5 0 0,0 3.5,8M6,18A1,1 0 0,0 7,19H8V22.5A1.5,1.5 0 0,0 9.5,24A1.5,1.5 0 0,0 11,22.5V19H13V22.5A1.5,1.5 0 0,0 14.5,24A1.5,1.5 0 0,0 16,22.5V19H17A1,1 0 0,0 18,18V8H6V18Z" />
-	</svg>
+		<svg style="width:96px;height:96px" viewBox="0 0 24 24">
+    	<path fill="#428bca" d="M3,5A2,2 0 0,1 5,3H19A2,2 0 0,1 21,5V19A2,2 0 0,1 19,21H5C3.89,21 3,20.1 3,19V5M6,6V18H10V16H8V8H10V6H6M16,16H14V18H18V6H14V8H16V16Z" />
+		</svg>
 	</div>
 
 	<div class="dash"></div>
 									<p class="light">
-										<p> Programming Languages: C++, C, Java, C#</p>
-										 <p>Scripting Languages: Python, PHP</p>
-										 <p>Web Technologies: Javascript, Dart, Git, SQL, Node, CSS, HTML</p>
+										<p>I am self-taught programmer.</p>
+										<p> Programming Languages: Java, VBA </p>
+										 <p>Scripting Languages: Python </p>
+										 <p>Web Technologies: Javascript, Git, SQLite, CSS, HTML, Ruby on Rails</p>
 		<div>
 			<p>
-					I've worked with <font color="#428bca"; style="bold";><span class="element"></span></font>
+					I've worked with <font color="#428bca" size="4em"><span class="element"></span></font>
 			</p>
 		</div>
 
@@ -180,57 +192,60 @@
 </div>
 
 <div class="row">
-
-
 <div class="column col-md-6 concealed visible animated fadeInUp">
 	<div class="flaticon">
 		<i class="flaticon-bulb11"></i>
 	</div>
 
-	<h3>Open source</h3>
+	<h3>Android App Development</h3>
+
+	<div class="SVGicon2">
+		<svg style="width:96px;height:96px" viewBox="0 0 24 24">
+	    <path fill="#428bca" d="M15,5H14V4H15M10,5H9V4H10M15.53,2.16L16.84,0.85C17.03,0.66 17.03,0.34 16.84,0.14C16.64,-0.05 16.32,-0.05 16.13,0.14L14.65,1.62C13.85,1.23 12.95,1 12,1C11.04,1 10.14,1.23 9.34,1.63L7.85,0.14C7.66,-0.05 7.34,-0.05 7.15,0.14C6.95,0.34 6.95,0.66 7.15,0.85L8.46,2.16C6.97,3.26 6,5 6,7H18C18,5 17,3.25 15.53,2.16M20.5,8A1.5,1.5 0 0,0 19,9.5V16.5A1.5,1.5 0 0,0 20.5,18A1.5,1.5 0 0,0 22,16.5V9.5A1.5,1.5 0 0,0 20.5,8M3.5,8A1.5,1.5 0 0,0 2,9.5V16.5A1.5,1.5 0 0,0 3.5,18A1.5,1.5 0 0,0 5,16.5V9.5A1.5,1.5 0 0,0 3.5,8M6,18A1,1 0 0,0 7,19H8V22.5A1.5,1.5 0 0,0 9.5,24A1.5,1.5 0 0,0 11,22.5V19H13V22.5A1.5,1.5 0 0,0 14.5,24A1.5,1.5 0 0,0 16,22.5V19H17A1,1 0 0,0 18,18V8H6V18Z" />
+	</svg>
+	</div>
 
 	<div class="dash"></div>
 
 	<p>
-		I <span class="heart"></span> open source and everything about it to its very nature.
-		I have contributed to several open source projects
-		and manage a few of my own.
+		I <span class="heart"></span> have developed an Android app named "hospito"
+		to search medicial facilities with offline and online mode.
+	</p>
+	<a href="https://play.google.com/store/apps/details?id=com.chakviapps.hospito" target="_blank">Click here</a>
+
+	<div class="dash"></div>
+</div>
+</div>
+
+
+
+<div class="row">
+<div class="column col-md-6 concealed visible animated fadeInUp">
+	<div class="flaticon">
+		<i class="flaticon-bulb11"></i>
+	</div>
+
+	<h3>Front-end Developer(Beginner)</h3>
+
+	<div class="SVGicon2">
+		<svg style="width:96px;height:96px" viewBox="0 0 24 24">
+    	<path fill="#428bca" d="M16.36,14C16.44,13.34 16.5,12.68 16.5,12C16.5,11.32 16.44,10.66 16.36,10H19.74C19.9,10.64 20,11.31 20,12C20,12.69 19.9,13.36 19.74,14M14.59,19.56C15.19,18.45 15.65,17.25 15.97,16H18.92C17.96,17.65 16.43,18.93 14.59,19.56M14.34,14H9.66C9.56,13.34 9.5,12.68 9.5,12C9.5,11.32 9.56,10.65 9.66,10H14.34C14.43,10.65 14.5,11.32 14.5,12C14.5,12.68 14.43,13.34 14.34,14M12,19.96C11.17,18.76 10.5,17.43 10.09,16H13.91C13.5,17.43 12.83,18.76 12,19.96M8,8H5.08C6.03,6.34 7.57,5.06 9.4,4.44C8.8,5.55 8.35,6.75 8,8M5.08,16H8C8.35,17.25 8.8,18.45 9.4,19.56C7.57,18.93 6.03,17.65 5.08,16M4.26,14C4.1,13.36 4,12.69 4,12C4,11.31 4.1,10.64 4.26,10H7.64C7.56,10.66 7.5,11.32 7.5,12C7.5,12.68 7.56,13.34 7.64,14M12,4.03C12.83,5.23 13.5,6.57 13.91,8H10.09C10.5,6.57 11.17,5.23 12,4.03M18.92,8H15.97C15.65,6.75 15.19,5.55 14.59,4.44C16.43,5.07 17.96,6.34 18.92,8M12,2C6.47,2 2,6.5 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z" />
+		</svg>
+	</div>
+
+	<div class="dash"></div>
+
+	<p>
+		I <span class="heart"></span> am good in HTML5 CSS3 and improving on my JavaScript, jQuery skill every day.
 	</p>
 
 	<div class="dash"></div>
 </div>
-
-
 </div>
+
 
 </div>
 </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -244,15 +259,15 @@
 	<ul>
 		<li class="email">
 			<a href="https://plus.google.com/101160662494461691403">
-				<svg style="width:30px;height:30px" viewBox="0 0 24 24">
+				<svg style="width:42px;height:42px" viewBox="0 0 24 24">
 			    <path fill="#db3236" d="M23,11H21V9H19V11H17V13H19V15H21V13H23M8,11V13.4H12C11.8,14.4 10.8,16.4 8,16.4C5.6,16.4 3.7,14.4 3.7,12C3.7,9.6 5.6,7.6 8,7.6C9.4,7.6 10.3,8.2 10.8,8.7L12.7,6.9C11.5,5.7 9.9,5 8,5C4.1,5 1,8.1 1,12C1,15.9 4.1,19 8,19C12,19 14.7,16.2 14.7,12.2C14.7,11.7 14.7,11.4 14.6,11H8Z" />
-			</svg>
+				</svg>
 				<p style="color:#db3236";>Google+</p>
 			</a>
 		</li>
 		<li class="linkedin">
 			<a href="https://www.linkedin.com/in/charanjeet-birdi-179656b/">
-				<svg style="width:30px;height:30px" viewBox="0 0 24 24">
+				<svg style="width:42px;height:42px" viewBox="0 0 24 24">
 				    <path fill="#0077B5" d="M21,21H17V14.25C17,13.19 15.81,12.31 14.75,12.31C13.69,12.31 13,13.19 13,14.25V21H9V9H13V11C13.66,9.93 15.36,9.24 16.5,9.24C19,9.24 21,11.28 21,13.75V21M7,21H3V9H7V21M5,3A2,2 0 0,1 7,5A2,2 0 0,1 5,7A2,2 0 0,1 3,5A2,2 0 0,1 5,3Z" />
 				</svg>
 				<p  style="color:#0077B5;">Linkedin</p>
@@ -261,7 +276,7 @@
 
 		<li class="twitter">
 			<a href="https://twitter.com/search?q=%40charanbirdi">
-				<svg style="width:30px;height:30px" viewBox="0 0 24 24">
+				<svg style="width:42px;height:42px" viewBox="0 0 24 24">
 			    <path fill="#32CCFE" d="M22.46,6C21.69,6.35 20.86,6.58 20,6.69C20.88,6.16 21.56,5.32 21.88,4.31C21.05,4.81 20.13,5.16 19.16,5.36C18.37,4.5 17.26,4 16,4C13.65,4 11.73,5.92 11.73,8.29C11.73,8.63 11.77,8.96 11.84,9.27C8.28,9.09 5.11,7.38 3,4.79C2.63,5.42 2.42,6.16 2.42,6.94C2.42,8.43 3.17,9.75 4.33,10.5C3.62,10.5 2.96,10.3 2.38,10C2.38,10 2.38,10 2.38,10.03C2.38,12.11 3.86,13.85 5.82,14.24C5.46,14.34 5.08,14.39 4.69,14.39C4.42,14.39 4.15,14.36 3.89,14.31C4.43,16 6,17.26 7.89,17.29C6.43,18.45 4.58,19.13 2.56,19.13C2.22,19.13 1.88,19.11 1.54,19.07C3.44,20.29 5.7,21 8.12,21C16,21 20.33,14.46 20.33,8.79C20.33,8.6 20.33,8.42 20.32,8.23C21.16,7.63 21.88,6.87 22.46,6Z" />
 				</svg>
 				<p style="color:#32CCFE;">Twitter</p>
@@ -270,7 +285,7 @@
 
 		<li class="facebook">
 			<a href="https://www.facebook.com/charanjeetbirdi?fref=ts&ref=br_tf">
-				<svg style="width:30px;height:30px" viewBox="0 0 24 24">
+				<svg style="width:42px;height:42px" viewBox="0 0 24 24">
 					<path fill="#3B5998" d="M17,2V2H17V6H15C14.31,6 14,6.81 14,7.5V10H14L17,10V14H14V22H10V14H7V10H10V6A4,4 0 0,1 14,2H17Z" />
 				</svg>
 				<p style="color:#3B5998;">Facebook</p>
@@ -288,159 +303,193 @@
 </section>
 
 
+
+
+
 <script>
-$("#footer ul li").hover(function() {
-      $(this).find('p').stop(true, true).fadeIn(700);
-    }, function() {
-      $(this).find('p').stop(true, true).fadeOut(700);
-});
+			$("#footer ul li").hover(function() {
+			      $(this).find('p').stop(true, true).fadeIn(800);
+			    }, function() {
+			      $(this).find('p').stop(true, true).fadeOut(800);
+			});
 </script>
-
-
 
 <script>
 	$(function(){
 			$(".element").typed({
-				strings: ["HTML3","CSS3","Javascript","Ruby on Rails","SQLite","Python","Android Development","Java"],
+				strings: ["VBA","HTML3","CSS3","Javascript","Ruby on Rails","SQLite","Python","Android Development","Java"],
 				typeSpeed: 0,
-			// time before typing starts
-		startDelay: 4,
-		// backspacing speed
-		backSpeed: 0,
-		// time before backspacing
-		backDelay: 1500,
-		// loop
-		loop: true,
-		// false = infinite
-		loopCount: false,
-		// show cursor
-		showCursor: true,
-		// character for cursor
-		cursorChar: "|",
-
+				// time before typing starts
+				startDelay: 4,
+				// backspacing speed
+				backSpeed: 0,
+				// time before backspacing
+				backDelay: 1500,
+				// loop
+				loop: true,
+				// false = infinite
+				loopCount: false,
+				// show cursor
+				showCursor: true,
+				// character for cursor
+				cursorChar: "|",
 			});
 	});
 </script>
 
+<script>
+							Date.daysBetween = function( date1, date2 ) {
+									  //Get 1 day in milliseconds
+									  var one_day=1000*60*60*24;
 
+									  // Convert both dates to milliseconds
+									  var date1_ms = date1.getTime();
+									  var date2_ms = date2.getTime();
 
+									  // Calculate the difference in milliseconds
+										var difference_ms = 0;
+									  var difference_ms = date2_ms - date1_ms;
+									  //take out milliseconds
+									  difference_ms = difference_ms/1000;
 
+									  //var seconds = Math.floor(difference_ms % 60);
+									  difference_ms = difference_ms/60;
 
+									  //var minutes = Math.floor(difference_ms % 60);
 
+									  difference_ms = difference_ms/60;
+									  //var hours = Math.floor(difference_ms % 24);
+
+										difference_ms = difference_ms/24;
+									  var days = Math.floor(difference_ms % 24);
+
+										difference_ms2 = difference_ms/30;
+									  var months = Math.floor(difference_ms2 % 12);
+
+										difference_ms = difference_ms/365;
+										var years = Math.floor(difference_ms % (365));
+
+						  return years + ' years, ' + months + ' months, ' + days + ' days,';
+						}
+
+						var start_date  = new Date(2007, 6, 2);
+						var today= new Date();
+						document.getElementById("exp").innerHTML = Date.daysBetween(start_date, today);
+
+</script>
 
 <script>
-
-	/* ---- particles.js config ---- */
-particlesJS("particles-js", {
-"particles": {
-"number": {
-	"value": 380,
-	"density": {
-		"enable": true,
-		"value_area": 800
-	}
-},
-"color": {
-	"value": "#ffffff"
-},
-"shape": {
-	"type": "circle",
-	"stroke": {
-		"width": 0,
-		"color": "#000000"
-	},
-	"polygon": {
-		"nb_sides": 4
-	},
-	"image": {
-		"src": "img/github.svg",
-		"width": 100,
-		"height": 100
-	}
-},
-"opacity": {
-	"value": 0.8,
-	"random": false,
-	"anim": {
-		"enable": false,
-		"speed": 1,
-		"opacity_min": 0.1,
-		"sync": false
-	}
-},
-"size": {
-	"value": 2,
-	"random": true,
-	"anim": {
-		"enable": false,
-		"speed": 40,
-		"size_min": 0.1,
-		"sync": false
-	}
-},
-"line_linked": {
-	"enable": true,
-	"distance": 70,
-	"color": "#ffffff",
-	"opacity": 0.4,
-	"width": 1
-},
-"move": {
-	"enable": true,
-	"speed": 3,
-	"direction": "none",
-	"random": false,
-	"straight": false,
-	"out_mode": "out",
-	"bounce": false,
-	"attract": {
-		"enable": false,
-		"rotateX": 600,
-		"rotateY": 1200
-	}
-}
-},
-"interactivity": {
-"detect_on": "canvas",
-"events": {
-	"onhover": {
-		"enable": true,
-		"mode": "grab"
-	},
-	"onclick": {
-		"enable": true,
-		"mode": "push"
-	},
-	"resize": true
-},
-"modes": {
-	"grab": {
-		"distance": 140,
-		"line_linked": {
-			"opacity": 1
-		}
-	},
-	"bubble": {
-		"distance": 400,
-		"size": 40,
-		"duration": 2,
-		"opacity": 8,
-		"speed": 3
-	},
-	"repulse": {
-		"distance": 200,
-		"duration": 0.4
-	},
-	"push": {
-		"particles_nb": 4
-	},
-	"remove": {
-		"particles_nb": 2
-	}
-}
-},
-"retina_detect": true
-});
+						/* ---- particles.js config ---- */
+					particlesJS("particles-js", {
+					"particles": {
+					"number": {
+						"value": 130,
+						"density": {
+							"enable": true,
+							"value_area": 800
+						}
+					},
+					"color": {
+						"value": "#ffffff"
+					},
+					"shape": {
+						"type": "circle",
+						"stroke": {
+							"width": 0,
+							"color": "#000000"
+						},
+						"polygon": {
+							"nb_sides": 5
+						},
+						"image": {
+							"src": "img/github.svg",
+							"width": 100,
+							"height": 100
+						}
+					},
+					"opacity": {
+						"value": 0.7,
+						"random": false,
+						"anim": {
+							"enable": false,
+							"speed": 1,
+							"opacity_min": 0.1,
+							"sync": false
+						}
+					},
+					"size": {
+						"value": 2,
+						"random": true,
+						"anim": {
+							"enable": false,
+							"speed": 40,
+							"size_min": 0.1,
+							"sync": false
+						}
+					},
+					"line_linked": {
+						"enable": true,
+						"distance": 150,
+						"color": "#ffffff",
+						"opacity": 0.4,
+						"width": 1
+					},
+					"move": {
+						"enable": true,
+						"speed": 4,
+						"direction": "none",
+						"random": false,
+						"straight": false,
+						"out_mode": "out",
+						"bounce": false,
+						"attract": {
+							"enable": false,
+							"rotateX": 600,
+							"rotateY": 1200
+						}
+					}
+					},
+					"interactivity": {
+					"detect_on": "canvas",
+					"events": {
+						"onhover": {
+							"enable": true,
+							"mode": "grab"
+						},
+						"onclick": {
+							"enable": true,
+							"mode": "push"
+						},
+						"resize": true
+					},
+					"modes": {
+						"grab": {
+							"distance": 140,
+							"line_linked": {
+								"opacity": 1
+							}
+						},
+						"bubble": {
+							"distance": 400,
+							"size": 40,
+							"duration": 2,
+							"opacity": 8,
+							"speed": 3
+						},
+						"repulse": {
+							"distance": 200,
+							"duration": 0.4
+						},
+						"push": {
+							"particles_nb": 4
+						},
+						"remove": {
+							"particles_nb": 2
+						}
+					}
+					},
+					"retina_detect": true
+					});
 
 </script>
 
