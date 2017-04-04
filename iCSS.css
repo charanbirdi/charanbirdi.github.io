@@ -84,6 +84,21 @@ a {
   user-select: none;
 }
 
+h5 {
+    font-style: normal;
+    //text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+.logos {
+  width: 35%;
+  padding: 10px;
+  min-width: 268px;
+  min-height: 120px;
+}
+
 
 canvas {
   display: block;
@@ -123,12 +138,6 @@ canvas {
 #work h3 {font-size: 1.2em; margin-top: 40px; margin-bottom: 20px; text-align: left; color: #428bca; }
 #work h4 {font-size: 0.7em; margin-top: 0; margin-bottom: 10px; text-align: left; }
 .work1 ul li {font-size: 0.9em; text-align: left; }
-
-
-.clearfix {
-  padding: 5px;
-  background-color: white;
-}
 
 #skills { float: left; width: 100%; padding: 30px 20px 30px; color: #9c9c9c; background-color: black;}
 #skills h1 {font-size: 2em; margin: 0 0 35px; text-align: left; }
