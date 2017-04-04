@@ -168,8 +168,8 @@ canvas {
 #footer .license:hover { border-bottom: 0.6px solid #bdbdbd; color: #9c9c9c; }
 
 
-@media only screen and (min-width: 780px) {
+@media screen and (min-width: 680px) {
   #skills {background-color: black; }
-  #bar1 { float: left; width: 49%; }
-  #bar2 { float: right; width: 49%; }
+  #bar1 { float: left; width: 45%; }
+  #bar2 { float: right; width: 45%; }
 }
