@@ -173,10 +173,6 @@ canvas {
 #footer ul li { display: inline-block; min-width: 50px; min-height: 75px; margin: 0 30px; padding: 0 30px; position: relative; }
 #footer ul li a {color: lightgray;}
 #footer ul li a p { position: absolute; font-weight: 400; letter-spacing: 1px; display: none; left: 0; right: 0; margin: auto; margin-top: 10px; }
-#footer ul .email:hover a { color: red; }
-#footer ul .email:hover p { color: red; display: inline;}
-#footer ul .twitter:hover a { color: #32CCFE; }
-#footer ul .codepen:hover a { color: black; }
 #footer .license { font-family: Georgia, sans-serif; color: #bdbdbd; letter-spacing: 1px; font-size: 13px; margin-top: 15px; }
 #footer .license a { color: inherit; padding-bottom: 3px; border-bottom: 1px dotted #bdbdbd; }
 #footer .license a:hover { border-bottom: 1px solid #bdbdbd; }
