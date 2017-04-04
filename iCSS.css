@@ -52,14 +52,8 @@ a {
   width: 100%;
 }
 
-#about {
-  padding: 5% 10% 7% 10%;
-}
-
-#about div h1 {
-  padding: 4% 10% 1% 10%;
-}
-
+#about {padding: 5% 10% 10% 10%; }
+#about div h1 {padding: 4% 10% 1% 10%; }
 #about p {
     color: #666666;
     margin: 0 auto;
