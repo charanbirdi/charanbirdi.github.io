@@ -131,8 +131,8 @@ canvas {
 #skills h2 {font-size: 1.5em; margin: 0 20px 25px; text-align: left; }
 
 #bar1 div, #bar2 div { margin: 7px 20px; text-align: left;}
-#bar1 { float: left; width: 90%; font-size: 0.9em; font-weight: 400; text-transform: uppercase; letter-spacing: 2px; text-align: left; margin-bottom: 15px; color: #727272; }
-#bar2 { float: left; width: 90%; font-size: 0.9em; font-weight: 400; text-transform: uppercase; letter-spacing: 2px; text-align: left; margin-bottom: 15px; color: #727272; }
+#bar1 { float: left; width: 95%; font-size: 0.9em; text-transform: uppercase; letter-spacing: 2px; text-align: left; margin-bottom: 15px; color: #727272; }
+#bar2 { float: left; width: 95%; font-size: 0.9em; text-transform: uppercase; letter-spacing: 2px; text-align: left; margin-bottom: 15px; color: #727272; }
 
 
 .vba-quotes { background: #ddd; padding: 30px 20px 30px; width: 100%; clear: both; }
@@ -168,10 +168,8 @@ canvas {
 #footer .license:hover { border-bottom: 0.6px solid #bdbdbd; color: #9c9c9c; }
 
 
-
-
-@media only screen and (min-width: 580px) {
+@media only screen and (min-width: 780px) {
   #skills {background-color: black; }
-  #bar1 { float: left; width: 50%; }
-  #bar2 { float: right; width: 47%; }
+  #bar1 { float: left; width: 49%; }
+  #bar2 { float: right; width: 49%; }
 }

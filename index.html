@@ -33,23 +33,19 @@
 
 		<div>
       <h1>About</h1>
-      <p> I have more than 9 years of experience of working as an Electrical Engineer in the Oil & Gas Industry during which I have helped in executing projects in different countries. I also have the experience of working overseas and worked for more than 1 year at Samsung Engineering Head Office in Seoul, South Korea.</p>
+			<p> I have a total of </p>
+			<p id="exp"></p>
+			<p> experience as an Electrical Engineer in the Oil & Gas Industry during which I have helped in executing projects in different countries. I also have the experience of working overseas and worked for more than 1 year at Samsung Engineering Head Office in Seoul, South Korea.</p>
 			<h1 class="mb-1">Born</h1>
 			<small>8<sup>th</sup> Feb 1984</small>
 			<p class="mb-1">Born in Dhuri, Punjab</p>
 			<h1 class="mb-1">College and Graduation</h1>
 			<p class="mb-1">Went to attend <em>Thapar Institute of Engineering and Technology</em>, Patiala and graduated in Electrical Engineering in 2007. </p>
-
     </div>
 
   </div>
 </section>
 
-<p id="exp"></p>
-
-<script>
-		document.getElementById("exp").innerHTML = Date();
-</script>
 
 	<section id="work">
 				  <div>
@@ -110,14 +106,13 @@
 						<div class="right col-md-6">
 				      <div id="bar2">
 								<h2>SOFTWARE</h2>
-				        <div class="bar concealed visible animated fadeInRight">VBA for excel</div>
-								<div class="bar concealed visible animated fadeInRight">Java</div>
-								<div class="bar concealed visible animated fadeInRight">Android Development</div>
-				        <div class="bar concealed visible animated fadeInRight">HTML5, CSS3</div>
-				        <div class="bar concealed visible animated fadeInRight">Javascript</div>
-				        <div class="bar concealed visible animated fadeInRight">SQLite</div>
-								<div class="bar concealed visible animated fadeInRight">Python (basic)</div>
-				        <div class="bar concealed visible animated fadeInRight">Ruby On Rails (basic)</div>
+				        <div class="bar concealed visible animated fadeInRight">ETAP</div>
+								<div class="bar concealed visible animated fadeInRight">VBA FOR EXCEL</div>
+								<div class="bar concealed visible animated fadeInRight">MICROSOFT OFFICE</div>
+				        <div class="bar concealed visible animated fadeInRight">AUTOCAD</div>
+				        <div class="bar concealed visible animated fadeInRight">PHOTOLUX</div>
+				        <div class="bar concealed visible animated fadeInRight">NAVISWORKS BASICS</div>
+								<div class="bar concealed visible animated fadeInRight">SP3D Basics</div>
 				      </div>
 				    </div>
 
@@ -296,11 +291,11 @@
 
 
 <script>
-$("#footer ul li").hover(function() {
-      $(this).find('p').stop(true, true).fadeIn(800);
-    }, function() {
-      $(this).find('p').stop(true, true).fadeOut(800);
-});
+			$("#footer ul li").hover(function() {
+			      $(this).find('p').stop(true, true).fadeIn(800);
+			    }, function() {
+			      $(this).find('p').stop(true, true).fadeOut(800);
+			});
 </script>
 
 <script>
@@ -327,117 +322,158 @@ $("#footer ul li").hover(function() {
 </script>
 
 <script>
-	/* ---- particles.js config ---- */
-particlesJS("particles-js", {
-"particles": {
-"number": {
-	"value": 130,
-	"density": {
-		"enable": true,
-		"value_area": 800
-	}
-},
-"color": {
-	"value": "#ffffff"
-},
-"shape": {
-	"type": "circle",
-	"stroke": {
-		"width": 0,
-		"color": "#000000"
-	},
-	"polygon": {
-		"nb_sides": 5
-	},
-	"image": {
-		"src": "img/github.svg",
-		"width": 100,
-		"height": 100
-	}
-},
-"opacity": {
-	"value": 0.7,
-	"random": false,
-	"anim": {
-		"enable": false,
-		"speed": 1,
-		"opacity_min": 0.1,
-		"sync": false
-	}
-},
-"size": {
-	"value": 2,
-	"random": true,
-	"anim": {
-		"enable": false,
-		"speed": 40,
-		"size_min": 0.1,
-		"sync": false
-	}
-},
-"line_linked": {
-	"enable": true,
-	"distance": 150,
-	"color": "#ffffff",
-	"opacity": 0.4,
-	"width": 1
-},
-"move": {
-	"enable": true,
-	"speed": 4,
-	"direction": "none",
-	"random": false,
-	"straight": false,
-	"out_mode": "out",
-	"bounce": false,
-	"attract": {
-		"enable": false,
-		"rotateX": 600,
-		"rotateY": 1200
-	}
-}
-},
-"interactivity": {
-"detect_on": "canvas",
-"events": {
-	"onhover": {
-		"enable": true,
-		"mode": "grab"
-	},
-	"onclick": {
-		"enable": true,
-		"mode": "push"
-	},
-	"resize": true
-},
-"modes": {
-	"grab": {
-		"distance": 140,
-		"line_linked": {
-			"opacity": 1
-		}
-	},
-	"bubble": {
-		"distance": 400,
-		"size": 40,
-		"duration": 2,
-		"opacity": 8,
-		"speed": 3
-	},
-	"repulse": {
-		"distance": 200,
-		"duration": 0.4
-	},
-	"push": {
-		"particles_nb": 4
-	},
-	"remove": {
-		"particles_nb": 2
-	}
-}
-},
-"retina_detect": true
-});
+							Date.daysBetween = function( date1, date2 ) {
+									  //Get 1 day in milliseconds
+									  var one_day=1000*60*60*24;
+
+									  // Convert both dates to milliseconds
+									  var date1_ms = date1.getTime();
+									  var date2_ms = date2.getTime();
+
+									  // Calculate the difference in milliseconds
+										var difference_ms = 0;
+									  var difference_ms = date2_ms - date1_ms;
+									  //take out milliseconds
+									  difference_ms = difference_ms/1000;
+
+									  //var seconds = Math.floor(difference_ms % 60);
+									  difference_ms = difference_ms/60;
+
+									  //var minutes = Math.floor(difference_ms % 60);
+
+									  difference_ms = difference_ms/60;
+									  //var hours = Math.floor(difference_ms % 24);
+
+										difference_ms = difference_ms/24;
+									  var days = Math.floor(difference_ms % 24);
+
+										difference_ms2 = difference_ms/30;
+									  var months = Math.floor(difference_ms2 % 12);
+
+										difference_ms = difference_ms/365;
+										var years = Math.floor(difference_ms % (365));
+
+						  return years + ' years, ' + months + ' months, ' + days + ' days,';
+						}
+
+						var start_date  = new Date(2007, 6, 2);
+						var today= new Date();
+						document.getElementById("exp").innerHTML = Date.daysBetween(start_date, today);
+
+</script>
+
+<script>
+						/* ---- particles.js config ---- */
+					particlesJS("particles-js", {
+					"particles": {
+					"number": {
+						"value": 130,
+						"density": {
+							"enable": true,
+							"value_area": 800
+						}
+					},
+					"color": {
+						"value": "#ffffff"
+					},
+					"shape": {
+						"type": "circle",
+						"stroke": {
+							"width": 0,
+							"color": "#000000"
+						},
+						"polygon": {
+							"nb_sides": 5
+						},
+						"image": {
+							"src": "img/github.svg",
+							"width": 100,
+							"height": 100
+						}
+					},
+					"opacity": {
+						"value": 0.7,
+						"random": false,
+						"anim": {
+							"enable": false,
+							"speed": 1,
+							"opacity_min": 0.1,
+							"sync": false
+						}
+					},
+					"size": {
+						"value": 2,
+						"random": true,
+						"anim": {
+							"enable": false,
+							"speed": 40,
+							"size_min": 0.1,
+							"sync": false
+						}
+					},
+					"line_linked": {
+						"enable": true,
+						"distance": 150,
+						"color": "#ffffff",
+						"opacity": 0.4,
+						"width": 1
+					},
+					"move": {
+						"enable": true,
+						"speed": 4,
+						"direction": "none",
+						"random": false,
+						"straight": false,
+						"out_mode": "out",
+						"bounce": false,
+						"attract": {
+							"enable": false,
+							"rotateX": 600,
+							"rotateY": 1200
+						}
+					}
+					},
+					"interactivity": {
+					"detect_on": "canvas",
+					"events": {
+						"onhover": {
+							"enable": true,
+							"mode": "grab"
+						},
+						"onclick": {
+							"enable": true,
+							"mode": "push"
+						},
+						"resize": true
+					},
+					"modes": {
+						"grab": {
+							"distance": 140,
+							"line_linked": {
+								"opacity": 1
+							}
+						},
+						"bubble": {
+							"distance": 400,
+							"size": 40,
+							"duration": 2,
+							"opacity": 8,
+							"speed": 3
+						},
+						"repulse": {
+							"distance": 200,
+							"duration": 0.4
+						},
+						"push": {
+							"particles_nb": 4
+						},
+						"remove": {
+							"particles_nb": 2
+						}
+					}
+					},
+					"retina_detect": true
+					});
 
 </script>
 
