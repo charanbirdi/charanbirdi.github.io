@@ -33,9 +33,12 @@ p, small {
 
 a {
     color: #428bca;
-    text-decoration: none;
+    //text-decoration: none;
     text-align: left;
+    text-decoration: underline;
 }
+
+.dash { height: 1px; width: 30%; background: black; margin: 20px auto; }
 
 .header {
   position: fixed;
@@ -143,29 +146,29 @@ canvas {
 
 #interests * {text-align: center; }
 #interests { padding-top: 70px; padding-bottom: 105px; background: white; position: relative; text-align: center; border-color: white; position: relative; }
-#interests h1 { margin-bottom: 35px; font-size: 2em; font-weight: 300; color: gray; letter-spacing: 0.2em; }
+#interests h1 { margin-bottom: 35px; font-size: 1.5em; font-weight: 300; color: gray; letter-spacing: 0.2em; }
 #interests .bold { font-weight: 600; }
-#interests a { color: black; padding-bottom: 2px; border-bottom: 1px solid black; }
-#interests a:hover { border-bottom: 1px dashed black; }
+//#interests a { color: black; padding-bottom: 2px; border-bottom: 1px solid black; }
+//#interests a:hover { border-bottom: 1px dashed black; }
 #interests i { font-size: 4em; color: #737373; }
 #interests .row:last-child { border-top: 1px solid #ebebeb; }
 #interests .row .column { padding: 30px; border-left: 1px solid #ebebeb; }
 #interests .row .column:first-of-type { border-left: none; }
 #interests h3 { font-weight: 400; color: #4c4c4c; letter-spacing: 0.2em; font-size: 1.4em; padding-bottom: 10px; }
-#interests p { color: #595959; padding-top: 10px; padding-bottom: 10px; font-size: 1.1em; letter-spacing: 1px; font-weight: 300; font-size: 15px; line-height: 25px; }
+#interests p { color: #595959; padding-top: 0px; padding-bottom: 6px; font-size: 1.1em; letter-spacing: 1px; font-weight: 300; font-size: 15px; line-height: 25px; }
 #interests .dash { background: lightgray; }
 
 
-#footer { padding: 65px 0 150px; background: #ECECEC; text-align: center; font-weight: 300; }
+#footer { padding: 65px 0 120px; background: #ECECEC; text-align: center; font-weight: 300; }
 #footer h3 { font-size: 1em; margin-bottom: 30px; color: gray; text-transform: uppercase; }
 #footer h4 { margin-bottom: 25px; }
 #footer ul { list-style: none; }
 #footer ul li { display: inline-block; min-width: 50px; min-height: 75px; margin: 0 30px; padding: 0 30px; position: relative; }
 #footer ul li a {color: lightgray;}
 #footer ul li a p { position: absolute; font-weight: 400; letter-spacing: 1px; display: none; left: 0; right: 0; margin: auto; margin-top: 10px; }
-#footer .license { font-family: Georgia, sans-serif; color: #bdbdbd; letter-spacing: 1px; font-size: 13px; margin-top: 15px; }
-#footer .license a { color: inherit; padding-bottom: 3px; border-bottom: 1px dotted #bdbdbd; }
-#footer .license a:hover { border-bottom: 1px solid #bdbdbd; }
+#footer .license { font-family: Georgia, sans-serif; color: #bdbdbd; letter-spacing: 1px; font-size: 15px; margin-top: 20px; }
+//#footer .license { color: inherit; padding-bottom: 3px; border-bottom: 1px dotted #bdbdbd; }
+#footer .license:hover { border-bottom: 1px solid #bdbdbd; color: #9c9c9c;}
 
 
 
