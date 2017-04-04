@@ -141,14 +141,6 @@ canvas {
 
 
 
-@media only screen and (min-width: 480px) {
-  #skills {background-color: black; }
-  #bar1 { float: left; width: 68%; }
-  #bar2 { float: right; width: 28%; }
-}
-
-
-
 #interests * {text-align: center; }
 #interests { padding-top: 70px; padding-bottom: 105px; background: white; position: relative; text-align: center; border-color: white; position: relative; }
 #interests h1 { margin-bottom: 35px; font-size: 2em; font-weight: 300; color: gray; letter-spacing: 0.2em; }
@@ -164,8 +156,6 @@ canvas {
 #interests .dash { background: lightgray; }
 
 
-
-
 #footer { padding: 65px 0 150px; background: #ECECEC; text-align: center; font-weight: 300; }
 #footer h3 { font-size: 1em; margin-bottom: 30px; color: gray; text-transform: uppercase; }
 #footer h4 { margin-bottom: 25px; }
@@ -176,3 +166,12 @@ canvas {
 #footer .license { font-family: Georgia, sans-serif; color: #bdbdbd; letter-spacing: 1px; font-size: 13px; margin-top: 15px; }
 #footer .license a { color: inherit; padding-bottom: 3px; border-bottom: 1px dotted #bdbdbd; }
 #footer .license a:hover { border-bottom: 1px solid #bdbdbd; }
+
+
+
+
+@media only screen and (min-width: 580px) {
+  #skills {background-color: black; }
+  #bar1 { float: left; width: 50%; }
+  #bar2 { float: right; width: 47%; }
+}
