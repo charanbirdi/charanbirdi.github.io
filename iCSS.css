@@ -130,7 +130,7 @@ canvas {
   background-color: white;
 }
 
-#skills { float: left; width: 100%; padding: 30px 20px 30px; color: #9c9c9c; background: black; display: block;}
+#skills { float: left; width: 100%; padding: 30px 20px 30px; color: #9c9c9c; background-color: black;}
 #skills h1 {font-size: 2em; margin: 0 0 35px; text-align: left; }
 #skills h2 {font-size: 1.5em; margin: 0 20px 25px; text-align: left; }
 
@@ -173,7 +173,7 @@ canvas {
 
 
 @media screen and (min-width: 1080px) {
-  #skills {background-color: black; }
+  //#skills {background-color: "black"; }
   #bar1 { float: left; width: 45%; }
   #bar2 { float: right; width: 45%; }
 
