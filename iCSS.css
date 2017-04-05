@@ -134,11 +134,10 @@ h5 {
 
 
 #interests * {text-align: center; }
-#interests { padding-top: 70px; padding-bottom: 105px; background: white; position: relative; text-align: center; border-color: white; position: relative; }
+#interests { padding-top: 70px; padding-bottom: 70px; background: white; position: relative; text-align: center; border-color: white; position: relative; }
 #interests h1 { margin-bottom: 35px; font-size: 1.5em; font-weight: 300; color: gray; letter-spacing: 0.2em; }
 #interests .bold { font-weight: 600; }
 #interests i { font-size: 4em; color: #737373; }
-#interests .row:last-child { border-top: 1px solid #ebebeb; }
 #interests .row .column { padding: 30px; border-left: 1px solid #ebebeb; }
 #interests .row .column:first-of-type { border-left: none; }
 #interests h3 { font-weight: 400; color: #4c4c4c; letter-spacing: 0.2em; font-size: 1.4em; padding-bottom: 10px; }
@@ -147,7 +146,7 @@ h5 {
 
 
 
-#contact { padding-top: 30px; padding-bottom: 50px; position: relative; border-color: whitesmoke; background: whitesmoke; color: gray; text-align: center; }
+#contact { padding-top: 30px; padding-bottom: 30px; position: relative; border-color: whitesmoke; background: whitesmoke; color: gray; text-align: center; }
 #contact h1 { color: grey; font-weight: 300; font-size: 1.5em; text-transform: uppercase; letter-spacing: 3px; margin: 10px 0 20px; }
 #contact h1 div { display: inline-block; }
 #contact p { font-size: 1.0em; font-weight: 300; letter-spacing: 1px; margin: 30px auto 35px; max-width: 500px; }
@@ -157,7 +156,7 @@ h5 {
 
 
 #footer { padding: 65px 0 100px; background: #ECECEC; text-align: center; font-weight: 300; }
-#footer h3 { font-size: 1em; margin-bottom: 30px; color: gray; }
+#footer h3 { font-size: 1.2em; margin-bottom: 30px; color: gray; }
 #footer h4 { margin-bottom: 25px; }
 #footer ul { list-style: none; padding: 0; }
 #footer ul li { display: inline-block; min-width: 50px; min-height: 75px; margin: 0 30px; padding: 0 30px; position: relative; }
