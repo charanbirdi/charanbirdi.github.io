@@ -9,11 +9,6 @@
 
 li { font-size: 0.9em; text-align: left; margin-bottom: 7px; }
 <<<<<<< HEAD
-html, body {height: 100%; width: 100%; }
-body {color: #404348; }
-h1, h2, h3, h4, p, small {margin: 10px 10px 5px 10px; }
-p, small {margin: 10px 10px 5px 10px; }
-=======
 
 html, body {
   height: 100%;
@@ -21,24 +16,29 @@ html, body {
 }
 
 .pulse {color: #428bca; height: auto;}
->>>>>>> origin/master
+=======
+html, body {height: 100%; width: 100%; }
+body {color: #404348; }
+h1, h2, h3, h4, p, small {margin: 10px 10px 5px 10px; }
+p, small {margin: 10px 10px 5px 10px; }
+>>>>>>> Master
 
 
 
 a {
     color: #428bca;
 <<<<<<< HEAD
+    //text-decoration: none;
+    text-align: left;
+    text-decoration: underline;
+    letter-spacing: 1.5px;
+=======
     text-decoration: none;
     text-align: center;
     letter-spacing: 1.5px;
     padding-bottom: 2px;
     border-bottom: 1px solid #428bca;
-=======
-    //text-decoration: none;
-    text-align: left;
-    text-decoration: underline;
-    letter-spacing: 1.5px;
->>>>>>> origin/master
+>>>>>>> Master
 }
 
 a:hover { border-bottom: 1px dashed #428bca; }
@@ -66,10 +66,10 @@ a:hover { border-bottom: 1px dashed #428bca; }
 #intro h4 { font-size: 1.0em; font-weight: 200; }
 
 <<<<<<< HEAD
-
-
 =======
->>>>>>> origin/master
+
+
+>>>>>>> Master
 #about {padding: 5% 10% 10% 10%; }
 #about div h1 {padding: 4% 10% 1% 10%; }
 #about p {
@@ -126,8 +126,6 @@ h5 {
   max-height: 120px;
   opacity: 0.9;
 }
-
-
 
 
 #work { padding: 30px 20px 30px; color: #9c9c9c; background: #363636; }
