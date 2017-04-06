@@ -116,14 +116,14 @@ h5 {
 #work h4 {font-size: 0.7em; margin-top: 0; margin-bottom: 10px; text-align: left; }
 .work1 ul li {font-size: 0.9em; text-align: left; }
 
-#skills { float: left; width: 100%; padding: 30px 20px 30px; color: #9c9c9c; background-color: black;}
-#skills h1 {font-size: 2em; margin: 0 0 35px; text-align: left; }
+#skills { float: left; width: 100%; padding: 30px 20px 30px; background-color: #191919;}
+#skills h1 {font-size: 2em; margin: 0 0 35px; text-align: left; color: #aaaaaa; }
 #skills h2 {font-size: 1.5em; margin: 0 20px 25px; text-align: left; }
 
 #bar1 div, #bar2 div { margin: 7px 20px; text-align: left; }
 #bar1 h2, #bar2 h2 { color: #428bca; }
-#bar1 { float: left; width: 95%; font-size: 0.9em; text-transform: uppercase; letter-spacing: 2px; text-align: left; margin-bottom: 15px; color: #727272; }
-#bar2 { float: left; width: 95%; font-size: 0.9em; text-transform: uppercase; letter-spacing: 2px; text-align: left; margin-bottom: 15px; color: #727272; }
+#bar1 { float: left; width: 95%; font-size: 0.9em; text-transform: uppercase; letter-spacing: 2px; text-align: left; margin-bottom: 15px; color: #aaaaaa; }
+#bar2 { float: left; width: 95%; font-size: 0.9em; text-transform: uppercase; letter-spacing: 2px; text-align: left; margin-bottom: 15px; color: #aaaaaa; }
 
 
 .vba-quotes { background: #ddd; padding: 30px 20px 30px; width: 100%; clear: both; }
