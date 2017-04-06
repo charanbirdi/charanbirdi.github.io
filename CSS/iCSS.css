@@ -165,8 +165,8 @@ h5 {
 #footer .license { font-family: Georgia, sans-serif; color: #bdbdbd; letter-spacing: 1px; font-size: 12px; margin-top: 20px; }
 #footer .license:hover { border-bottom: 0.6px solid #bdbdbd; color: #9c9c9c; }
 
-
-@media screen and (min-width: 768px) {
+/* Desktops and laptops ----------- */
+@media only screen and (min-width: 768px) and (orientation : landscape) {
   #bar1 { float: left; width: 45%; }
   #bar2 { float: right; width: 45%; }
   .container {width: 70%; margin: auto; }
