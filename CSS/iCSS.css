@@ -166,7 +166,7 @@ h5 {
 #footer .license:hover { border-bottom: 0.6px solid #bdbdbd; color: #9c9c9c; }
 
 /* Desktops and laptops ----------- */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1080px) {
   #bar1 { float: left; width: 45%; background-color: yellow; }
   #bar2 { float: right; width: 45%; }
   .container {width: 70%; margin: auto; }
