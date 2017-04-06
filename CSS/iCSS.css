@@ -155,7 +155,7 @@ h5 {
 
 #footer { padding: 65px 0 100px; background: #ECECEC; text-align: center; font-weight: 300; }
 #footer h3 { font-size: 1.2em; margin-bottom: 30px; color: gray; }
-#footer h4 { margin-bottom: 25px; }
+//#footer h4 { margin-bottom: 25px; }
 #footer ul { list-style: none; padding: 0; }
 #footer ul li { display: inline-block; min-width: 50px; min-height: 75px; margin: 0 30px; padding: 0 30px; position: relative; }
 #footer ul li a {color: lightgray; border-bottom: none;}
@@ -163,16 +163,17 @@ h5 {
 #footer .license { font-family: Georgia, sans-serif; color: #bdbdbd; letter-spacing: 1px; font-size: 12px; margin-top: 20px; }
 #footer .license:hover { border-bottom: 0.6px solid #bdbdbd; color: #9c9c9c; }
 
-/* Desktops and laptops ----------- */
-@media only screen and (min-width: 1080px) {
-  #bar1 { float: left; width: 45%; }
-  #bar2 { float: right; width: 45%; }
-  .container {width: 70%; margin: auto; }
+
+/* Mobile ----------- */
+@media only screen and (min-width: 667px) {
+  #bar1 { float: left; width: 49%; }
+  #bar2 { float: right; width: 49%; background-color: yellow; }
+  .container {width: 85%; margin: auto; }
 }
 
-
-@media only screen and (min-width: 320px) and (orientation : landscape) {
-  #bar1 { float: left; width: 49%; }
-  #bar2 { float: right; width: 49%; }
-  .container {width: 90%; margin: auto; }
+/* Desktops and laptops ----------- */
+@media only screen and (min-width: 1024px) {
+  #bar1 { float: left; width: 45%; }
+  #bar2 { float: right; width: 45%; background-color: white; }
+  .container {width: 70%; margin: auto; }
 }
