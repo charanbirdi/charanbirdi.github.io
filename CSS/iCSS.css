@@ -167,14 +167,14 @@ h5 {
 
 /* Desktops and laptops ----------- */
 @media only screen and (min-width: 1080px) {
-  #bar1 { float: left; width: 45%; background-color: yellow; }
+  #bar1 { float: left; width: 45%; }
   #bar2 { float: right; width: 45%; }
   .container {width: 70%; margin: auto; }
 }
 
 
 @media only screen and (min-width: 320px) and (orientation : landscape) {
-  #bar1 { float: left; width: 45%; background-color: white; }
-  #bar2 { float: right; width: 45%; }
-  .container {width: 70%; margin: auto; }
+  #bar1 { float: left; width: 49%; }
+  #bar2 { float: right; width: 49%; }
+  .container {width: 80%; margin: auto; }
 }
