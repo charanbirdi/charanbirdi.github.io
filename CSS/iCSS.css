@@ -105,7 +105,23 @@ h5 {
   opacity: 0.9;
 }
 
-
+#zero {width: 400px; height: 280px; margin-bottom: 100px; }
+#dynamic-content {
+    font-size: 5px;
+    height: 72px;
+    line-height: 6px;
+    overflow: hidden;
+    position: absolute;
+    right: 276px;
+    tab-size: 2;
+    -moz-tab-size: 2;
+    -o-tab-size: 2;
+    transform: rotateX(10deg) rotateY(10deg) rotateZ(5deg);
+    top: 65px;
+    width: 125px;
+    word-spacing: 0;
+    background-color: black;
+}
 
 
 #work { padding: 30px 20px 30px; color: #9c9c9c; background: #363636; }

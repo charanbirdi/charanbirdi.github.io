@@ -316,6 +316,15 @@
 </div>
 </section>
 
+<section>
+	<div>
+		<img id="zero" src="images/homepageGraphics-2.png">
+		<pre id="dynamic-content">
+
+		</pre>
+	</div>
+</section>
+
 
 
 
@@ -473,6 +482,51 @@
 						document.getElementById("exp").innerHTML = Date.daysBetween(start_date, today);
 
 </script>
+
+
+
+<script>
+    var c=0;
+    window.onload = pic1;
+
+      function pic1() {
+          var image = document.getElementById("zero");
+          image.src = "images/homepageGraphics-1.png";
+          setTimeout(pic2, 150);
+      }
+      function pic2() {
+          var image = document.getElementById("zero");
+          image.src="images/homepageGraphics-3.png"
+          if (c<20) {
+              c=c+1;
+              setTimeout(pic1, 150);
+          }else {
+              c=0;
+              setTimeout(pic3, 150);
+          }
+      }
+
+      function pic3() {
+          var image = document.getElementById("zero");
+          image.src = "images/homepageGraphics-1.png";
+          if (c < 20) {
+              c=c+1;
+              setTimeout(pic4, 150);
+          }else {
+              c=0;
+              setTimeout(pic1, 150);
+          }
+
+      }
+      function pic4() {
+          var image = document.getElementById("zero");
+          image.src="images/homepageGraphics-2.png"
+          setTimeout(pic3, 150);
+      }
+</script>
+
+
+
 
 <script>
 						/* ---- particles.js config ---- */
