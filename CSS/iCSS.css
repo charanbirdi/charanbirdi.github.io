@@ -36,7 +36,6 @@ a:hover { border-bottom: 1px dashed #428bca; }
 
 .hero { height: 67%; width: 100%; }
 #intro {
-<<<<<<< HEAD:CSS/iCSS.css
   width: 100%;
   height:0%;
   color: white;
@@ -63,19 +62,7 @@ canvas {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
-=======
-  width: 100%;
-  height:0%;
-  color: white;
-  z-index: 9999;
-  background: none;
-  position: relative;
-  padding: 2% 1% 1% 0;
-  user-select: none;
->>>>>>> origin/master:CSS/iCSS.css
 }
-#intro h1 { font-size: 2.5em; font-weight: 300; padding-bottom: 0px; user-select: none; }
-#intro h4 { font-size: 1.0em; font-weight: 200; user-select: none; }
 
 
 #about {padding: 5% 10% 10% 10%; }
@@ -90,25 +77,6 @@ canvas {
 }
 
 .pulse {color: #428bca; height: auto;}
-<<<<<<< HEAD:CSS/iCSS.css
-=======
-
-canvas {
-  display: block;
-  vertical-align: bottom;
-}
-#particles-js {
-  position: absolute;
-  width: 100%;
-  height: 67%;
-  margin: 0 0 0 0;
-  background-color: black;
-  background-image: url("");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 50% 50%;
-}
->>>>>>> origin/master:CSS/iCSS.css
 
 #icharan img {
   width: 25%;
@@ -138,24 +106,16 @@ h5 {
   opacity: 0.9;
 }
 
-<<<<<<< HEAD:CSS/iCSS.css
 /*
 #dysection = {width: 100%; }
 #zero {width: 400px; height: 280px; margin-bottom: 100px; }
 #dynamic { position: absolute; }
-=======
-#zero {width: 400px; height: 280px; margin-bottom: 100px; }
->>>>>>> origin/master:CSS/iCSS.css
 #dynamic-content {
     font-size: 5px;
     height: 72px;
     line-height: 6px;
     overflow: hidden;
-<<<<<<< HEAD:CSS/iCSS.css
     //position: absolute;
-=======
-    position: absolute;
->>>>>>> origin/master:CSS/iCSS.css
     right: 276px;
     tab-size: 2;
     -moz-tab-size: 2;
@@ -165,7 +125,6 @@ h5 {
     width: 125px;
     word-spacing: 0;
     background-color: black;
-<<<<<<< HEAD:CSS/iCSS.css
     color: white;
 }
 
@@ -199,10 +158,6 @@ h5 {
   color: black;
 }
 #dynamic-content p {color: white; font-size: 7px; }
-=======
-}
-
->>>>>>> origin/master:CSS/iCSS.css
 
 #work { padding: 30px 20px 30px; color: #9c9c9c; background: #363636; }
 #work h1 {font-size: 2em; margin: 35px 0 35px; text-align: left; }
@@ -239,13 +194,8 @@ h5 {
 #interests .dash { background: lightgray; }
 
 
-<<<<<<< HEAD:CSS/iCSS.css
 #contact { padding-top: 50px; padding-bottom: 20px; position: relative; border-color: whitesmoke; background: whitesmoke; color: gray; text-align: center; }
 //#contact { padding-top: 50px; padding-bottom: 20px; border-color: whitesmoke; background: whitesmoke; color: gray; text-align: center; }
-=======
-
-#contact { padding-top: 50px; padding-bottom: 20px; position: relative; border-color: whitesmoke; background: whitesmoke; color: gray; text-align: center; }
->>>>>>> origin/master:CSS/iCSS.css
 #contact h1 { color: grey; font-weight: 300; font-size: 1.5em; text-transform: uppercase; letter-spacing: 3px; margin: 10px 0 20px; }
 #contact h1 div { display: inline-block; }
 #contact p { font-size: 1.0em; font-weight: 300; letter-spacing: 1px; margin: 30px auto 35px; max-width: 500px; }
