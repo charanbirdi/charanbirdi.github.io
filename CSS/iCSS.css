@@ -107,30 +107,43 @@ h5 {
 }
 
 /*
-#dysection = {width: 100%; }
-#zero {width: 400px; height: 280px; margin-bottom: 100px; }
-#dynamic { position: absolute; }
-#dynamic-content {
-    font-size: 5px;
-    height: 72px;
-    line-height: 6px;
-    overflow: hidden;
-    //position: absolute;
-    right: 276px;
-    tab-size: 2;
-    -moz-tab-size: 2;
-    -o-tab-size: 2;
-    transform: rotateX(10deg) rotateY(10deg) rotateZ(5deg);
-    top: 65px;
-    width: 125px;
-    word-spacing: 0;
-    background-color: black;
-    color: white;
-}
-
-*/
 #dysection { position: relative; width: 800px; height: 560px; margin:auto; }
-//#dynamic { position: relative; }
+//#dysection { position: relative; width: 80%; height: 30%; margin:auto; }
+
+#dynamic {
+    background-size: cover;
+    bottom: 0%;
+    position: absolute;
+    width: 800px;
+    height: 560px;
+    margin: 0% 10%;
+}
+#zero {width: 650px; height: 445px; margin:1%; }
+#dynamic-content {
+  font-size: 5px;
+  height: 70px;
+  line-height: 6px;
+  overflow: hidden;
+  position: absolute;
+  right: 297px;
+  tab-size: 2;
+  -moz-tab-size: 2;
+  -o-tab-size: 2;
+  transform: rotateX(19deg) rotateY(9deg) rotateZ(5deg);
+  top: 56px;
+  width: 105px;
+  word-spacing: 0;
+  background-color: black;
+  color: black;
+}
+#dynamic-content p {color: white; font-size: 7px; }
+*/
+
+
+
+#dysection { position: relative; width: 800px; height: 560px; margin:auto; }
+//#dysection { position: relative; width: 80%; height: 30%; margin:auto; }
+
 #dynamic {
     background-size: cover;
     bottom: 0%;
