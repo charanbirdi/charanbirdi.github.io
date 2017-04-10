@@ -107,7 +107,6 @@ h5 {
 }
 
 
-//#dysection { position: relative; width: 800px; height: 560px; margin:auto; }
 #dysection { position: relative; width: 360px; height: 252px; margin:auto; }
 #dynamic {
     background-size: cover;
@@ -117,7 +116,7 @@ h5 {
     margin: auto;
     align-self: center;
 }
-#zero {width: 360px; height: 252px; margin:0%; }
+#zero {width: 360px; height: 252px; margin:0%;}
 #zero1 {width: 360px; height: 252px; margin:0%; display: none;}
 #zero3 {width: 360px; height: 252px; margin:0%; display: none;}
 
@@ -128,7 +127,7 @@ h5 {
   //width: 105px;
   width: 58px;
   line-height: 4.8px;
-  //overflow: hidden;
+  overflow: hidden;
   word-wrap: break-word;
   position: absolute;
   //right: 297px;
@@ -143,44 +142,6 @@ h5 {
   color: white;
   text-align: left;
 }
-
-//#dynamic-content p {color: black; font-size: 5px; line-height: 6px; }
-
-
-/*   % ABSOLUTE SETTINGS
-#dysection { position: relative; width: 800px; height: 560px; margin:auto; }
-//#dysection { position: relative; width: 300px; height: 260px; margin:auto; }
-#dynamic {
-    background-size: cover;
-    position: absolute;
-    width: 800px;
-    height: 560px;
-    margin: auto;
-    align-self: center;
-}
-#zero {width: 650px; height: 445px; margin:1%; }
-
-#dynamic-content {
-  font-size: 5px;
-  height: 67px;
-  width: 105px;
-  line-height: 6px;
-  overflow: hidden;
-  position: absolute;
-  right: 297px;
-  tab-size: 2;
-  -moz-tab-size: 2;
-  -o-tab-size: 2;
-  transform: rotateX(5deg) rotateY(5deg) rotateZ(5deg) skew(-3.7deg) ;
-  top: 59px;
-  word-spacing: 0;
-  background-color: black;
-  color: black;
-}
-
-#dynamic-content p {color: white; font-size: 7px; }
-
-*/
 
 /*   % setting for animation
 
@@ -282,6 +243,48 @@ h5 {
 #footer ul li a p { position: absolute; font-weight: 400; letter-spacing: 1px; display: none; left: 0; right: 0; margin: auto; margin-top: 10px; }
 #footer .license { font-family: Georgia, sans-serif; color: #bdbdbd; letter-spacing: 1px; font-size: 12px; margin-top: 20px; }
 #footer .license:hover { border-bottom: 0.6px solid #bdbdbd; color: #9c9c9c; }
+
+
+/* iphone 5 only Mobile ----------- */
+@media only screen and (max-width: 320px) {
+  #dysection { position: relative; width: 310px; height: 217px; margin:auto; }
+  #dynamic {
+      background-size: cover;
+      position: absolute;
+      width: 310px;
+      height: 217px;
+      margin: auto;
+      //margin: 0;
+      align-self: center;
+  }
+  #zero {width: 310px; height: 217px; margin:0%;}
+  #zero1 {width: 310px; height: 217px; margin:0%; display: none;}
+  #zero3 {width: 310px; height: 217px; margin:0%; display: none;}
+
+  #dynamic-content {
+    font-size: 3.5px;
+    //height: 67px;
+    height: 33px;
+    //width: 105px;
+    width: 50px;
+    line-height: 4.8px;
+    overflow: hidden;
+    word-wrap: break-word;
+    position: absolute;
+    //right: 297px;
+    right: 96px;
+    tab-size: 2;
+    -moz-tab-size: 2;
+    -o-tab-size: 2;
+    transform: rotateX(5deg) rotateY(5deg) rotateZ(5deg) skew(-3.7deg) ;
+    top: 14px;
+    word-spacing: 0;
+    background-color: black;
+    color: white;
+    text-align: left;
+  }
+
+}
 
 
 /* Mobile ----------- */
