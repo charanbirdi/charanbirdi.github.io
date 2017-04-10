@@ -485,57 +485,61 @@
 <script>
     var c=0;
 		var type_count=1;
-    window.onload = pic1;
-		//window.onload = startTyping(text, 50, "dynamic-content");
 
-      function pic1() {
+		$(document).ready(pic1);
 
-					if(type_count==1) {
-						type_count = type_count + 1;
-						startTyping(text, 50, "dynamic-content");
-					}
-          var image = document.getElementById("zero");
-          image.src = "images/homepageGraphics-1.png";
-          setTimeout(pic2, 150);
 
-      }
-      function pic2() {
-          var image = document.getElementById("zero");
-          image.src="images/homepageGraphics-3.png"
-          if (c<40) {
-              c=c+1;
-              setTimeout(pic1, 150);
-          }else {
-              c=0;
-              setTimeout(pic3, 150);
-          }
-      }
+			   // window.onload = pic1;
+					//window.onload = startTyping(text, 50, "dynamic-content");
 
-      function pic3() {
-          var image = document.getElementById("zero");
-          image.src = "images/homepageGraphics-1.png";
-          if (c < 18) {
-              c=c+1;
-              setTimeout(pic4, 150);
-          }else {
-              c=0;
-              setTimeout(pic1, 150);
-          }
+			      function pic1() {
 
-      }
-      function pic4() {
-          var image = document.getElementById("zero");
-          image.src="images/homepageGraphics-2.png"
-          setTimeout(pic3, 150);
-      }
+								if(type_count==1) {
+									type_count = type_count + 1;
+									startTyping(text, 50, "dynamic-content");
+								}
+			          var image = document.getElementById("zero");
+			          image.src = "images/homepageGraphics-1.png";
+			          setTimeout(pic2, 150);
+
+			      }
+			      function pic2() {
+			          var image = document.getElementById("zero");
+			          image.src="images/homepageGraphics-3.png"
+			          if (c<40) {
+			              c=c+1;
+			              setTimeout(pic1, 150);
+			          }else {
+			              c=0;
+			              setTimeout(pic3, 150);
+			          }
+			      }
+
+			      function pic3() {
+			          var image = document.getElementById("zero");
+			          image.src = "images/homepageGraphics-1.png";
+			          if (c < 18) {
+			              c=c+1;
+			              setTimeout(pic4, 150);
+			          }else {
+			              c=0;
+			              setTimeout(pic1, 150);
+			          }
+
+			      }
+			      function pic4() {
+			          var image = document.getElementById("zero");
+			          image.src="images/homepageGraphics-2.png"
+			          setTimeout(pic3, 150);
+			      }
+
+
 
 
 </script>
 
 
-
-<SCRIPT LANGUAGE="JavaScript">
-<!--
+<script>
 var text="var combinations = new List&lt;Tuple&lt;int, string&gt;&gt; </br> Func&lt;int, int, bool&gt; isMatch = (i, comb) =&gt; </br> for (int i = 1; i &lt;= 100; i++) 	{if(matchingCombs.Any()) matchingCombs.Select(c =&gt; c.Item2)));} </br>elseConsole}";
 
 //var delay=50;
@@ -573,12 +577,7 @@ function startTyping(textParam, delayParam, destinationParam)
   destination=destinationParam;
   type();
 }
-
-</SCRIPT>
-
-
-
-
+</script>
 
 
 <script>
@@ -695,7 +694,6 @@ function startTyping(textParam, delayParam, destinationParam)
 					});
 
 </script>
-
 
 
 	</body>

@@ -120,12 +120,12 @@ h5 {
 #zero {width: 360px; height: 252px; margin:0%; }
 
 #dynamic-content {
-  font-size: 3px;
+  font-size: 3.5px;
   //height: 67px;
   height: 38px;
   //width: 105px;
   width: 58px;
-  line-height: 3.8px;
+  line-height: 4.8px;
   //overflow: hidden;
   word-wrap: break-word;
   position: absolute;
