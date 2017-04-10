@@ -125,25 +125,16 @@ h5 {
   height: 38px;
   //width: 105px;
   width: 58px;
-<<<<<<< HEAD
   line-height: 3.8px;
   //overflow: hidden;
   word-wrap: break-word;
   position: absolute;
   //right: 297px;
   right: 113px;
-=======
-  line-height: 6px;
-  overflow: hidden;
-  position: absolute;
-  //right: 297px;
-  right: 123px;
->>>>>>> origin/master
   tab-size: 2;
   -moz-tab-size: 2;
   -o-tab-size: 2;
   transform: rotateX(5deg) rotateY(5deg) rotateZ(5deg) skew(-3.7deg) ;
-<<<<<<< HEAD
   top: 18px;
   word-spacing: 0;
   background-color: black;
@@ -152,15 +143,6 @@ h5 {
 }
 
 //#dynamic-content p {color: black; font-size: 5px; line-height: 6px; }
-=======
-  top: 28px;
-  word-spacing: 0;
-  background-color: black;
-  color: white;
-}
-
-#dynamic-content p {color: white; font-size: 5px; line-height: 6px; }
->>>>>>> origin/master
 
 
 /*   % ABSOLUTE SETTINGS

@@ -319,9 +319,6 @@
 <section id = dysection>
 	<div id="dynamic">
 		<img id="zero" src="images/homepageGraphics-2.png">
-<<<<<<< HEAD
-		<p id="dynamic-content"></p>
-=======
 		<pre id="dynamic-content">
 shhfhsfhifhsifhsfhsdfhhfvsdvhhv
 	shhfhsfhifhsifhsfhsdfhhfvsdvhhv
@@ -331,7 +328,6 @@ shhfhsfhifhsifhsfhsdfhhfvsdvhhv
 	 shhfhsfhifhsifhsfhsdfhhfvsdvhhv
 			<p>i am awesome</p>
 		</pre>
->>>>>>> origin/master
 	</div>
 </section>
 
@@ -496,25 +492,17 @@ shhfhsfhifhsifhsfhsdfhhfvsdvhhv
 
 <script>
     var c=0;
-		var type_count=1;
     window.onload = pic1;
-		//window.onload = startTyping(text, 50, "dynamic-content");
 
       function pic1() {
-
-					if(type_count==1) {
-						type_count = type_count + 1;
-						startTyping(text, 50, "dynamic-content");
-					}
           var image = document.getElementById("zero");
           image.src = "images/homepageGraphics-1.png";
           setTimeout(pic2, 150);
-
       }
       function pic2() {
           var image = document.getElementById("zero");
           image.src="images/homepageGraphics-3.png"
-          if (c<40) {
+          if (c<20) {
               c=c+1;
               setTimeout(pic1, 150);
           }else {
@@ -526,7 +514,7 @@ shhfhsfhifhsifhsfhsdfhhfvsdvhhv
       function pic3() {
           var image = document.getElementById("zero");
           image.src = "images/homepageGraphics-1.png";
-          if (c < 18) {
+          if (c < 20) {
               c=c+1;
               setTimeout(pic4, 150);
           }else {
@@ -537,58 +525,10 @@ shhfhsfhifhsifhsfhsdfhhfvsdvhhv
       }
       function pic4() {
           var image = document.getElementById("zero");
-          image.src="images/homepageGraphicss-2.png"
+          image.src="images/homepageGraphics-2.png"
           setTimeout(pic3, 150);
       }
-
-
 </script>
-
-
-
-<SCRIPT LANGUAGE="JavaScript">
-<!--
-var text="var combinations = new List&lt;Tuple&lt;int, string&gt;&gt; </br> Func&lt;int, int, bool&gt; isMatch = (i, comb) =&gt; </br> for (int i = 1; i &lt;= 100; i++) 	{if(matchingCombs.Any()) matchingCombs.Select(c =&gt; c.Item2)));} </br>elseConsole}";
-
-//var delay=50;
-var delay=3;
-var currentChar=1;
-var destination="[not defined]";
-function type()
-
-{
-  if (document.getElementById)
-  {
-    var dest=document.getElementById(destination);
-    if (dest)
-    {
-      dest.innerHTML=text.substr(0, currentChar);
-      currentChar++
-      if (currentChar>text.length)
-      {
-        currentChar=1;
-        //setTimeout("type()", 5000);
-				setTimeout("type()", 5500);
-      }
-      else
-      {
-        setTimeout("type()", delay);
-      }
-    }
-  }
-}
-function startTyping(textParam, delayParam, destinationParam)
-{
-  text=textParam;
-  delay=delayParam;
-  currentChar=1;
-  destination=destinationParam;
-  type();
-}
-
-</SCRIPT>
-
-
 
 
 
