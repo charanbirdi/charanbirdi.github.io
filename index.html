@@ -317,9 +317,9 @@
 
 <section id = dysection>
 	<div id="dynamic">
-		<img id="zero" src="images/homepageGraphics-2.png"/>
-		<img id="zero1" src="images/homepageGraphics-1.png" style="width:0px;height:0px;">
-		<img id="zero3" src="images/homepageGraphics-3.png" style="width:0px;height:0px;">
+		<img id="zero" src="images/homepageGraphics-2.png" />
+		<img id="zero1" src="images/homepageGraphics-1.png" />
+		<img id="zero3" src="images/homepageGraphics-3.png" />
 
 		<p id="dynamic-content"></p>
 	</div>
@@ -487,6 +487,9 @@
 <script>
     var c=0;
 		var type_count=1;
+		var image1 = document.getElementById("zero1");
+		var image2 = document.getElementById("zero");
+		var image3 = document.getElementById("zero3");
 
 		//$(document).ready(pic1);
 
@@ -500,14 +503,26 @@
 									type_count = type_count + 1;
 									startTyping(text, 50, "dynamic-content");
 								}
-			          var image = document.getElementById("zero");
-			          image.src = "images/homepageGraphics-1.png";
+			          //var image = document.getElementById("zero");
+			          //image.src = "images/homepageGraphics-1.png";
+
+
+								image1.style.display = "inline";
+								image2.style.display = "none";
+								image3.style.display = "none";
+
 			          setTimeout(pic2, 150);
 
 			      }
 			      function pic2() {
 			          var image = document.getElementById("zero");
-			          image.src="images/homepageGraphics-3.png"
+			          //image.src="images/homepageGraphics-3.png"
+
+								image1.style.display = "none";
+								image2.style.display = "none";
+								image3.style.display = "inline";
+
+
 			          if (c<40) {
 			              c=c+1;
 			              setTimeout(pic1, 150);
@@ -519,7 +534,13 @@
 
 			      function pic3() {
 			          var image = document.getElementById("zero");
-			          image.src = "images/homepageGraphics-1.png";
+			          //image.src = "images/homepageGraphics-1.png";
+
+								image1.style.display = "inline";
+								image2.style.display = "none";
+								image3.style.display = "none";
+
+
 			          if (c < 18) {
 			              c=c+1;
 			              setTimeout(pic4, 150);
@@ -531,7 +552,14 @@
 			      }
 			      function pic4() {
 			          var image = document.getElementById("zero");
-			          image.src="images/homepageGraphics-2.png"
+			          //image.src="images/homepageGraphics-2.png"
+
+
+								image1.style.display = "none";
+								image2.style.display = "inline";
+								image3.style.display = "none";
+
+
 			          setTimeout(pic3, 150);
 			      }
 

@@ -118,8 +118,8 @@ h5 {
     align-self: center;
 }
 #zero {width: 360px; height: 252px; margin:0%; }
-#zero1 {display: none;}
-#zero3 {display: none;}
+#zero1 {width: 360px; height: 252px; margin:0%; display: none;}
+#zero3 {width: 360px; height: 252px; margin:0%; display: none;}
 
 #dynamic-content {
   font-size: 3.5px;
