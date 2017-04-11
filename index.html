@@ -604,6 +604,7 @@ function type()
       if (currentChar>text.length)
       {
         currentChar=1;
+				return false;
 				//setTimeout("type()", 5500);
       }
       else
@@ -628,7 +629,7 @@ function startTyping(textParam, delayParam, destinationParam)
 
 <script>
 
-ScrollRate = 70;
+ScrollRate = 95;
 
 function scrollDiv_init() {
 	var dynamicresult = "[:log] add_to_notification \
@@ -690,7 +691,7 @@ function scrollDiv_init() {
 [:log] add_to_notifi \
 [:log] /AJAX/live_fe" ;
 
-$("dynamic-content").stop();
+//$("dynamic-content").stop();
 
 	document.getElementById("dynamic-content").innerHTML = dynamicresult;
 	DivElmnt = document.getElementById("dynamic-content");
