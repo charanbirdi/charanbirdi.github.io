@@ -225,10 +225,11 @@ h5 {
     //width: 105px;
     width: 50px;
     line-height: 4.8px;
+    font-weight: 80;
+    font-family: monospace;
     overflow: hidden;
     word-wrap: break-word;
     position: absolute;
-    //right: 297px;
     right: 96px;
     tab-size: 2;
     -moz-tab-size: 2;
