@@ -107,7 +107,6 @@ h5 {
 }
 
 
-//#dysection { position: relative; width: 800px; height: 560px; margin:auto; }
 #dysection { position: relative; width: 360px; height: 252px; margin:auto; }
 #dynamic {
     background-size: cover;
@@ -117,112 +116,34 @@ h5 {
     margin: auto;
     align-self: center;
 }
-#zero {width: 360px; height: 252px; margin:0%; }
+#zero {width: 360px; height: 252px; margin:0%;}
+#zero1 {width: 360px; height: 252px; margin:0%; display: none;}
+#zero3 {width: 360px; height: 252px; margin:0%; display: none;}
 
 #dynamic-content {
-  font-size: 3px;
-  //height: 67px;
+  //font-size: 3.5px;
+  font-size: 3.5px;
+  font-weight: 400;
+  font-family: monospace;
+  //white-space: pre;
   height: 38px;
-  //width: 105px;
   width: 58px;
-  line-height: 6px;
+  line-height: 5px;
   overflow: hidden;
+  word-wrap: break-word;
   position: absolute;
   //right: 297px;
-  right: 123px;
+  right: 113px;
   tab-size: 2;
   -moz-tab-size: 2;
   -o-tab-size: 2;
   transform: rotateX(5deg) rotateY(5deg) rotateZ(5deg) skew(-3.7deg) ;
-  top: 28px;
+  top: 18px;
   word-spacing: 0;
   background-color: black;
   color: white;
+  text-align: left;
 }
-
-#dynamic-content p {color: white; font-size: 5px; line-height: 6px; }
-
-
-/*   % ABSOLUTE SETTINGS
-#dysection { position: relative; width: 800px; height: 560px; margin:auto; }
-//#dysection { position: relative; width: 300px; height: 260px; margin:auto; }
-#dynamic {
-    background-size: cover;
-    position: absolute;
-    width: 800px;
-    height: 560px;
-    margin: auto;
-    align-self: center;
-}
-#zero {width: 650px; height: 445px; margin:1%; }
-
-#dynamic-content {
-  font-size: 5px;
-  height: 67px;
-  width: 105px;
-  line-height: 6px;
-  overflow: hidden;
-  position: absolute;
-  right: 297px;
-  tab-size: 2;
-  -moz-tab-size: 2;
-  -o-tab-size: 2;
-  transform: rotateX(5deg) rotateY(5deg) rotateZ(5deg) skew(-3.7deg) ;
-  top: 59px;
-  word-spacing: 0;
-  background-color: black;
-  color: black;
-}
-
-#dynamic-content p {color: white; font-size: 7px; }
-
-*/
-
-/*   % setting for animation
-
-//#dysection { position: relative; width: 800px; height: 560px; margin:auto; }
-//#dysection { position: relative; width: 90%; height: 56%; margin-left: 5%; margin-right: 5%; }
-#dysection { position: relative; width: 100%; height: 70%; margin 0 5%; }
-
-#dynamic {
-    background-size: cover;
-    //bottom: 0%;
-    position: absolute;
-    //width: 800px;
-    width: 100%;
-    //height: 560px;
-    height: 70%;
-    margin: auto;
-    align-self: center;
-}
-//#zero {width: 650px; height: 445px; margin:1%; }
-#zero {width: 100%; height: 100%; margin:0%; max-width: 650px; max-height: 445px; }
-#dynamic-content {
-  font-size: 5px;
-  //height: 67px;
-  height: 15%;
-  //width: 105px;
-  width: 16%;
-  line-height: 6px;
-  overflow: hidden;
-  position: absolute;
-  //right: 297px;
-  right: 34.2%;
-  tab-size: 2;
-  -moz-tab-size: 2;
-  -o-tab-size: 2;
-  //transform: rotateX(12deg) rotateY(12deg) rotateZ(5.2deg);
-  transform: rotateX(5deg) rotateY(5deg) rotateZ(5deg) skew(-6deg) ;
-  //top: 59px;
-  top: 11%;
-
-  word-spacing: 0;
-  background-color: black;
-  color: black;
-}
-#dynamic-content p {color: white; font-size: 7px; }
-
-*/
 
 #work { padding: 30px 20px 30px; color: #9c9c9c; background: #363636; }
 #work h1 {font-size: 2em; margin: 35px 0 35px; text-align: left; }
@@ -278,6 +199,47 @@ h5 {
 #footer ul li a p { position: absolute; font-weight: 400; letter-spacing: 1px; display: none; left: 0; right: 0; margin: auto; margin-top: 10px; }
 #footer .license { font-family: Georgia, sans-serif; color: #bdbdbd; letter-spacing: 1px; font-size: 12px; margin-top: 20px; }
 #footer .license:hover { border-bottom: 0.6px solid #bdbdbd; color: #9c9c9c; }
+
+
+/* iphone 5 only Mobile ----------- */
+@media only screen and (max-width: 320px) {
+  #dysection { position: relative; width: 310px; height: 217px; margin:auto; }
+  #dynamic {
+      background-size: cover;
+      position: absolute;
+      width: 310px;
+      height: 217px;
+      margin: auto;
+      //margin: 0;
+      align-self: center;
+  }
+  #zero {width: 310px; height: 217px; margin:0%;}
+  #zero1 {width: 310px; height: 217px; margin:0%; display: none;}
+  #zero3 {width: 310px; height: 217px; margin:0%; display: none;}
+
+  #dynamic-content {
+    font-size: 3px;
+    height: 33px;
+    width: 50px;
+    line-height: 4px;
+    font-weight: 100;
+    font-family: monospace;
+    overflow: hidden;
+    word-wrap: break-word;
+    position: absolute;
+    right: 96px;
+    tab-size: 2;
+    -moz-tab-size: 2;
+    -o-tab-size: 2;
+    transform: rotateX(5deg) rotateY(5deg) rotateZ(5deg) skew(-3.7deg) ;
+    top: 14px;
+    word-spacing: 0;
+    background-color: black;
+    color: white;
+    text-align: left;
+  }
+
+}
 
 
 /* Mobile ----------- */

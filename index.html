@@ -7,7 +7,6 @@
 		<link href="CSS/normalize.css" rel="stylesheet">
     <script src="scripts/jquery-3.1.1.min.js"></script>
 		<script src="scripts/particles.js"></script>
-		<script src="scripts/iJS.js"></script>
 		<script src="scripts/typed.min.js"></script>
 	</head>
 
@@ -43,10 +42,10 @@
 			<h2></h2>
 			<p> I am self taught programmer and <span class="pulse" color="red">&hearts;</span> to explore the application of Machine Learning in Electrical Engineering.</p>
 			<h1 class="mb-1">Born</h1>
-			<small>8<sup>th</sup> Feb 1984</small>
+			<small>8<sup>th</sup> Feb</small>
 			<p class="mb-1">Born in Dhuri, Punjab</p>
-			<h1 class="mb-1">College and Graduation</h1>
-			<p class="mb-1">Went to attend <em>Thapar Institute of Engineering and Technology</em>, Patiala and graduated in Electrical Engineering in 2007. </p>
+			<h1 class="mb-1">Education</h1>
+			<p class="mb-1">Graduated from <em>Thapar Institute of Engineering and Technology</em>, Patiala with Bachelors (B.E.) in Electrical Engineering. </p>
     </div>
 
 
@@ -318,18 +317,18 @@
 
 <section id = dysection>
 	<div id="dynamic">
-		<img id="zero" src="images/homepageGraphics-2.png">
-		<pre id="dynamic-content">
-shhfhsfhifhsifhsfhsdfhhfvsdvhhv
-	shhfhsfhifhsifhsfhsdfhhfvsdvhhv
-	shhfhsfhifhsifhsfhsdfhhfvsdvhhv
-	I am awesomeeeee
-	 shhfhsfhifhsifhsfhsdfhhfvsdvhhv
-	 shhfhsfhifhsifhsfhsdfhhfvsdvhhv
-			<p>i am awesome</p>
-		</pre>
+		<img id="zero" src="images/homepageGraphics-2.png" />
+		<img id="zero1" src="images/homepageGraphics-1.png" />
+		<img id="zero3" src="images/homepageGraphics-3.png" />
+
+		<p id="dynamic-content"></p>
 	</div>
 </section>
+
+
+
+
+
 
 
 
@@ -492,42 +491,244 @@ shhfhsfhifhsifhsfhsdfhhfvsdvhhv
 
 <script>
     var c=0;
-    window.onload = pic1;
+		var type_count = 1;
+		var type_count2 = 1;
+		var image1 = document.getElementById("zero1");
+		var image2 = document.getElementById("zero");
+		var image3 = document.getElementById("zero3");
 
-      function pic1() {
-          var image = document.getElementById("zero");
-          image.src = "images/homepageGraphics-1.png";
-          setTimeout(pic2, 150);
+			   window.onload = pic1;
+
+			      function pic1() {
+							//scrollDiv_init();
+
+								if(type_count==1) {
+									type_count = type_count + 1;
+									type_count2 = 1;
+									startTyping(text, 50, "dynamic-content");
+
+								}
+			          //var image = document.getElementById("zero");
+			          //image.src = "images/homepageGraphics-1.png";
+
+
+								image1.style.display = "inline";
+								image2.style.display = "none";
+								image3.style.display = "none";
+
+			          setTimeout(pic2, 150);
+
+			      }
+			      function pic2() {
+			          var image = document.getElementById("zero");
+			          //image.src="images/homepageGraphics-3.png"
+
+								image1.style.display = "none";
+								image2.style.display = "none";
+								image3.style.display = "inline";
+
+
+			          if (c<31) {
+			              c=c+1;
+			              setTimeout(pic1, 150);
+			          }else {
+			              c=0;
+			              setTimeout(pic3, 150);
+			          }
+			      }
+
+			      function pic3() {
+
+
+								if(type_count2==1) {
+									type_count2 = type_count2 + 1;
+									type_count = 1;
+									scrollDiv_init();
+								}
+
+
+			          var image = document.getElementById("zero");
+			          //image.src = "images/homepageGraphics-1.png";
+
+								image1.style.display = "inline";
+								image2.style.display = "none";
+								image3.style.display = "none";
+
+
+			          if (c < 20) {
+			              c=c+1;
+			              setTimeout(pic4, 150);
+			          }else {
+			              c=0;
+			              setTimeout(pic1, 150);
+			          }
+
+			      }
+			      function pic4() {
+			          var image = document.getElementById("zero");
+			          //image.src="images/homepageGraphics-2.png"
+
+
+								image1.style.display = "none";
+								image2.style.display = "inline";
+								image3.style.display = "none";
+
+
+			          setTimeout(pic3, 150);
+			      }
+
+
+//window.onload = pic1;
+
+</script>
+
+
+<script>
+var text="</br> var comb = new List&lt; </n> 		Tuple&lt;int, </br>    string&gt;&gt; </br>Func&lt;int, int, bool&gt; </b>    isMatch = (i, comb) =&gt; </br> for (int i = 1; i<100; i++)";
+
+var delay=6;
+var currentChar=1;
+var destination="[not defined]";
+function type()
+
+{
+  if (document.getElementById)
+  {
+    var dest=document.getElementById(destination);
+    if (dest)
+    {
+      dest.innerHTML=text.substr(0, currentChar);
+      currentChar++
+
+
+      if (currentChar>text.length)
+      {
+        currentChar=1;
+				return false;
+				//setTimeout("type()", 5500);
       }
-      function pic2() {
-          var image = document.getElementById("zero");
-          image.src="images/homepageGraphics-3.png"
-          if (c<20) {
-              c=c+1;
-              setTimeout(pic1, 150);
-          }else {
-              c=0;
-              setTimeout(pic3, 150);
-          }
+      else
+      {
+        setTimeout("type()", delay);
       }
 
-      function pic3() {
-          var image = document.getElementById("zero");
-          image.src = "images/homepageGraphics-1.png";
-          if (c < 20) {
-              c=c+1;
-              setTimeout(pic4, 150);
-          }else {
-              c=0;
-              setTimeout(pic1, 150);
-          }
+    }
+  }
+}
+function startTyping(textParam, delayParam, destinationParam)
+{
+  text=textParam;
+  delay=delayParam;
+  currentChar=1;
+  destination=destinationParam;
+  type();
+}
+</script>
 
-      }
-      function pic4() {
-          var image = document.getElementById("zero");
-          image.src="images/homepageGraphics-2.png"
-          setTimeout(pic3, 150);
-      }
+
+
+<script>
+
+ScrollRate = 90;
+
+function scrollDiv_init() {
+var dynamicresult = "[:log] add_to_notification \
+[:log] /AJAX/live_events </br>\
+[:log] total 0.0 seconds </br>\
+[:log] add_to_notificat </br>\
+[:log] /AJAX/live_feed/ </br>\
+[:log] total 0.0 second </br>\
+[:log] add_to_notificati </br>\
+[:log] monitor (pid=111. </br>\
+[:log] add_to_notifica </br>\
+[:log] Raven is not  </br>\
+[:log] add_to_notific </br>\
+[:log] No handlers coul </br>\
+[:log] add_to_notifica </br>\
+[:log] /ghost/ping/:  </br>\
+[:log] total 0.0 secon </br>\
+[:log] add_to_notifica </br>\
+[:log] /beta/: 14 que </br>\
+[:log] total 0.0 secon </br>\
+[:log] add_to_notific </br>\
+[:log] add_to_notific </br>\
+[:log] /AJAX/live_fee </br>\
+[:log] total 0.0 secon </br>\
+[:log] add_to_notifica </br>\
+[:log] /AJAX/live_feed </br>\
+[:log] total 0.0 secon </br>\
+[:log] add_to_notifica </br>\
+[:log] monitor (pid=11 </br>\
+[:log] add_to_notific </br>\
+[:log] Raven is not c </br>\
+[:log] add_to_notific </br>\
+[:log] No handlers co </br>\
+[:log] add_to_notific </br>\
+[:log] /ghost/ping/:  </br>\
+[:log] total 0.0 seco </br>\
+[:log] add_to_notific </br>\
+[:log] /beta/: 14 quen </br>\
+[:log] total 0.0 sec </br>\
+[:log] add_to_notifi </br>\
+[:log] add_to_notifi </br>\
+[:log] /AJAX/live_fe </br>\
+[:log] add_to_notifica </br>\
+[:log] /AJAX/live_feed </br>\
+[:log] total 0.0 secon </br>\
+[:log] add_to_notifica </br>\
+[:log] monitor (pid=11 </br>\
+[:log] add_to_notific </br>\
+[:log] Raven is not c </br>\
+[:log] add_to_notific </br>\
+[:log] No handlers co </br>\
+[:log] add_to_notific </br>\
+[:log] /ghost/ping/:  </br>\
+[:log] total 0.0 seco </br>\
+[:log] add_to_notific </br>\
+[:log] /beta/: 14 quen </br>\
+[:log] total 0.0 sec </br>\
+[:log] add_to_notifi </br>\
+[:log] add_to_notifi </br>\
+[:log] /AJAX/live_fe" ;
+
+$("dynamic-content").stop();
+
+	//document.getElementById("dynamic-content").innerHTML = dynamicresult;
+	DivElmnt = document.getElementById("dynamic-content");
+	//DivElmnt.style.fontSize = "2px";
+	DivElmnt.innerHTML = dynamicresult;
+	//DivElmnt.style.background-color = white;
+	//DivElmnt.style.color = white;
+	ReachedMaxScroll = false;
+
+	DivElmnt.scrollTop = 0;
+	PreviousScrollTop  = 0;
+
+	ScrollInterval = setInterval('scrollDiv()', ScrollRate);
+}
+
+function scrollDiv() {
+
+	if (!ReachedMaxScroll) {
+		DivElmnt.scrollTop = PreviousScrollTop;
+		PreviousScrollTop++;
+		ReachedMaxScroll = DivElmnt.scrollTop >= (DivElmnt.scrollHeight - DivElmnt.offsetHeight);
+	}
+	else {
+		//ReachedMaxScroll = (DivElmnt.scrollTop == 0)?false:true;
+		//DivElmnt.scrollTop = PreviousScrollTop;
+		//PreviousScrollTop--;
+	}
+}
+
+function pauseDiv() {
+	clearInterval(ScrollInterval);
+}
+
+function resumeDiv() {
+	PreviousScrollTop = DivElmnt.scrollTop;
+	ScrollInterval    = setInterval('scrollDiv()', ScrollRate);
+}
 </script>
 
 
@@ -647,7 +848,6 @@ shhfhsfhifhsifhsfhsdfhhfvsdvhhv
 					});
 
 </script>
-
 
 
 	</body>
