@@ -520,7 +520,7 @@
 
 			      }
 			      function pic2() {
-			          var image = document.getElementById("zero");
+			          //var image = document.getElementById("zero");
 			          //image.src="images/homepageGraphics-3.png"
 
 								image1.style.display = "none";
@@ -528,7 +528,7 @@
 								image3.style.display = "inline";
 
 
-			          if (c<31) {
+			          if (c<34) {
 			              c=c+1;
 			              setTimeout(pic1, 150);
 			          }else {
@@ -547,7 +547,7 @@
 								}
 
 
-			          var image = document.getElementById("zero");
+			          //var image = document.getElementById("zero");
 			          //image.src = "images/homepageGraphics-1.png";
 
 								image1.style.display = "inline";
@@ -565,14 +565,13 @@
 
 			      }
 			      function pic4() {
-			          var image = document.getElementById("zero");
+			          //var image = document.getElementById("zero");
 			          //image.src="images/homepageGraphics-2.png"
 
 
 								image1.style.display = "none";
 								image2.style.display = "inline";
 								image3.style.display = "none";
-
 
 			          setTimeout(pic3, 150);
 			      }
@@ -590,7 +589,6 @@ var delay=6;
 var currentChar=1;
 var destination="[not defined]";
 function type()
-
 {
   if (document.getElementById)
   {
@@ -629,7 +627,7 @@ function startTyping(textParam, delayParam, destinationParam)
 
 <script>
 
-ScrollRate = 90;
+ScrollRate = 100;
 
 function scrollDiv_init() {
 var dynamicresult = "[:log] add_to_notification \
