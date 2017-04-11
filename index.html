@@ -528,7 +528,7 @@
 								image3.style.display = "inline";
 
 
-			          if (c<33) {
+			          if (c<31) {
 			              c=c+1;
 			              setTimeout(pic1, 150);
 			          }else {
@@ -584,7 +584,7 @@
 
 
 <script>
-var text="var comb = new List&lt;Tuple&lt;int, string&gt;&gt; </br> Func&lt;int, int, bool&gt; isMatch = (i, comb) =&gt; </br> for (int i = 1; i &lt;= 100; i++)";
+var text="var comb = new List&lt;Tuple&lt;int, string&gt;&gt; </br> Func&lt;int, int, bool&gt; isMatch = (i, comb) =&gt; </br> for (int i = 1; i &lt;= 100; i++) 	{if(matchingCombs.Any())";
 
 var delay=3;
 var currentChar=1;
@@ -689,6 +689,8 @@ function scrollDiv_init() {
 [:log] add_to_notifi \
 [:log] add_to_notifi \
 [:log] /AJAX/live_fe" ;
+
+$("dynamic-content").stop();
 
 	document.getElementById("dynamic-content").innerHTML = dynamicresult;
 	DivElmnt = document.getElementById("dynamic-content");
