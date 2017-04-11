@@ -42,10 +42,10 @@
 			<h2></h2>
 			<p> I am self taught programmer and <span class="pulse" color="red">&hearts;</span> to explore the application of Machine Learning in Electrical Engineering.</p>
 			<h1 class="mb-1">Born</h1>
-			<small>8<sup>th</sup> Feb 1984</small>
+			<small>8<sup>th</sup> Feb</small>
 			<p class="mb-1">Born in Dhuri, Punjab</p>
-			<h1 class="mb-1">College and Graduation</h1>
-			<p class="mb-1">Went to attend <em>Thapar Institute of Engineering and Technology</em>, Patiala and graduated in Electrical Engineering in 2007. </p>
+			<h1 class="mb-1">Education</h1>
+			<p class="mb-1">Graduated from <em>Thapar Institute of Engineering and Technology</em>, Patiala with Bachelors (B.E.) in Electrical Engineering. </p>
     </div>
 
 
@@ -327,6 +327,11 @@
 
 
 
+
+
+
+
+
 <section id="contact">
   <div class="container">
     <div class="paperplane concealed visible animated bounceInDown"><i class="flaticon-paper41"></i></div>
@@ -486,10 +491,12 @@
 
 <script>
     var c=0;
-		var type_count=1;
+		var type_count = 1;
+		var type_count2 = 1;
 		var image1 = document.getElementById("zero1");
 		var image2 = document.getElementById("zero");
 		var image3 = document.getElementById("zero3");
+
 
 		//$(document).ready(pic1);
 
@@ -498,10 +505,13 @@
 					//window.onload = startTyping(text, 50, "dynamic-content");
 
 			      function pic1() {
+							//scrollDiv_init();
 
 								if(type_count==1) {
 									type_count = type_count + 1;
+									type_count2 = 1;
 									startTyping(text, 50, "dynamic-content");
+
 								}
 			          //var image = document.getElementById("zero");
 			          //image.src = "images/homepageGraphics-1.png";
@@ -523,7 +533,7 @@
 								image3.style.display = "inline";
 
 
-			          if (c<37) {
+			          if (c<31) {
 			              c=c+1;
 			              setTimeout(pic1, 150);
 			          }else {
@@ -533,6 +543,15 @@
 			      }
 
 			      function pic3() {
+
+
+								if(type_count2==1) {
+									type_count2 = type_count2 + 1;
+									type_count = 1;
+									scrollDiv_init();
+								}
+
+
 			          var image = document.getElementById("zero");
 			          //image.src = "images/homepageGraphics-1.png";
 
@@ -570,7 +589,8 @@
 
 
 <script>
-var text="var combinations = new List&lt;Tuple&lt;int, string&gt;&gt; </br> Func&lt;int, int, bool&gt; isMatch = (i, comb) =&gt; </br> for (int i = 1; i &lt;= 100; i++) 	{if(matchingCombs.Any()) matchingCombs.Select(c =&gt; c.Item2)));} </br>elseConsole}";
+//var text="var combinations = new List&lt;Tuple&lt;int, string&gt;&gt; </br> Func&lt;int, int, bool&gt; isMatch = (i, comb) =&gt; </br> for (int i = 1; i &lt;= 100; i++) 	{if(matchingCombs.Any()) matchingCombs.Select(c =&gt; c.Item2)));} </br>elseConsole}";
+var text="var combinations = new List&lt;Tuple&lt;int, string&gt;&gt; </br> Func&lt;int, int, bool&gt; isMatch = (i, comb) =&gt; </br> for (int i = 1; i &lt;= 100; i++) 	{if(matchingCombs.Any())";
 
 //var delay=50;
 var delay=3;
@@ -586,16 +606,19 @@ function type()
     {
       dest.innerHTML=text.substr(0, currentChar);
       currentChar++
+
+
       if (currentChar>text.length)
       {
         currentChar=1;
-        //setTimeout("type()", 5000);
-				setTimeout("type()", 5500);
+				//scrollDiv_init();
+				//setTimeout("type()", 5500);
       }
       else
       {
         setTimeout("type()", delay);
       }
+
     }
   }
 }
@@ -606,6 +629,108 @@ function startTyping(textParam, delayParam, destinationParam)
   currentChar=1;
   destination=destinationParam;
   type();
+}
+</script>
+
+
+
+<script>
+
+ScrollRate = 70;
+
+function scrollDiv_init() {
+	var dynamicresult = "[:log] add_to_notification \
+[:log] /AJAX/live_events \
+[:log] total 0.0 seconds \
+[:log] add_to_notificat \
+[:log] /AJAX/live_feed/ \
+[:log] total 0.0 second \
+[:log] add_to_notificati \
+[:log] monitor (pid=111. \
+[:log] add_to_notifica \
+[:log] Raven is not  \
+[:log] add_to_notific \
+[:log] No handlers coul \
+[:log] add_to_notifica \
+[:log] /ghost/ping/:  \
+[:log] total 0.0 secon \
+[:log] add_to_notifica \
+[:log] /beta/: 14 que \
+[:log] total 0.0 secon \
+[:log] add_to_notific \
+[:log] add_to_notific \
+[:log] /AJAX/live_fee \
+[:log] total 0.0 secon \
+[:log] add_to_notifica \
+[:log] /AJAX/live_feed \
+[:log] total 0.0 secon \
+[:log] add_to_notifica \
+[:log] monitor (pid=11 \
+[:log] add_to_notific \
+[:log] Raven is not c \
+[:log] add_to_notific \
+[:log] No handlers co \
+[:log] add_to_notific \
+[:log] /ghost/ping/:  \
+[:log] total 0.0 seco \
+[:log] add_to_notific \
+[:log] /beta/: 14 quen \
+[:log] total 0.0 sec \
+[:log] add_to_notifi \
+[:log] add_to_notifi \
+[:log] /AJAX/live_fe \
+[:log] add_to_notifica \
+[:log] /AJAX/live_feed \
+[:log] total 0.0 secon \
+[:log] add_to_notifica \
+[:log] monitor (pid=11 \
+[:log] add_to_notific \
+[:log] Raven is not c \
+[:log] add_to_notific \
+[:log] No handlers co \
+[:log] add_to_notific \
+[:log] /ghost/ping/:  \
+[:log] total 0.0 seco \
+[:log] add_to_notific \
+[:log] /beta/: 14 quen \
+[:log] total 0.0 sec \
+[:log] add_to_notifi \
+[:log] add_to_notifi \
+[:log] /AJAX/live_fe" ;
+
+	document.getElementById("dynamic-content").innerHTML = dynamicresult;
+	DivElmnt = document.getElementById("dynamic-content");
+	//DivElmnt.style.fontSize = "2px";
+	//DivElmnt.innerHTML = dynamicresult;
+	ReachedMaxScroll = false;
+
+	DivElmnt.scrollTop = 0;
+	PreviousScrollTop  = 0;
+
+	ScrollInterval = setInterval('scrollDiv()', ScrollRate);
+}
+
+function scrollDiv() {
+
+	if (!ReachedMaxScroll) {
+		DivElmnt.scrollTop = PreviousScrollTop;
+		PreviousScrollTop++;
+		ReachedMaxScroll = DivElmnt.scrollTop >= (DivElmnt.scrollHeight - DivElmnt.offsetHeight);
+	}
+	else {
+		//ReachedMaxScroll = (DivElmnt.scrollTop == 0)?false:true;
+		//DivElmnt.scrollTop = PreviousScrollTop;
+		//PreviousScrollTop--;
+	}
+}
+
+function pauseDiv() {
+	clearInterval(ScrollInterval);
+}
+
+function resumeDiv() {
+	PreviousScrollTop = DivElmnt.scrollTop;
+	ScrollInterval    = setInterval('scrollDiv()', ScrollRate);
 }
 </script>
 
