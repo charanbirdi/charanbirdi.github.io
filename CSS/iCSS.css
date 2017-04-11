@@ -128,7 +128,6 @@ h5 {
   //white-space: pre;
   height: 38px;
   width: 58px;
-  //line-height: 4px;
   line-height: 5px;
   overflow: hidden;
   word-wrap: break-word;
@@ -219,12 +218,10 @@ h5 {
   #zero3 {width: 310px; height: 217px; margin:0%; display: none;}
 
   #dynamic-content {
-    font-size: 3.5px;
-    //height: 67px;
+    font-size: 3px;
     height: 33px;
-    //width: 105px;
     width: 50px;
-    line-height: 4.8px;
+    line-height: 4px;
     font-weight: 80;
     font-family: monospace;
     overflow: hidden;
