@@ -345,6 +345,12 @@ li img{
 
 @media print {
   
+  *{
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+  
+
   @page {
     size: A4 portrait;
     margin: 2mm !important;
@@ -368,7 +374,7 @@ li img{
 
 
 
-@media(max-width: 700px){
+@media(max-width: 600px){
   
   body{
       grid-template-columns: 1fr;
