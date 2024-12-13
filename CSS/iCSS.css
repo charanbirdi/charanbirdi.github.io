@@ -4,6 +4,15 @@
 
 
 
+
+:root {
+  --color_dark: #e0e5e1;
+  --color_light: #f7f8f7;
+}
+
+
+
+
 html{
   height: auto;
 }
@@ -59,7 +68,7 @@ aside .h3 {
 
 
 .nav_pic{ 
-  background-color:#e0e5e1;
+  background-color: var(--color_dark);
   padding: 1em;
   grid-column-start: 1;
   grid-column-end: 2;
@@ -78,7 +87,7 @@ nav{
   grid-area: navbar;
   height: 100%;
   color: black;
-  background-color:#f7f8f7;
+  background-color: var(--color_light);
   padding: 1em;
 }
 
@@ -91,7 +100,7 @@ aside{
   height: 100%;
   align-self: start;
   grid-area: sidebar;
-  background-color:#e0e5e1;
+  background-color: var(--color_dark);
   color: black;
   padding: 1em;
   
@@ -100,7 +109,7 @@ aside{
 
 main{
   grid-area: main;
-  background-color: #f7f8f7;
+  background-color: var(--color_light);
   color: black;
   padding: 1em;
 }
@@ -108,7 +117,7 @@ main{
 
 footer{
   grid-area: footer;
-  background: #f7f8f7;
+  background: var(--color_light);
   color: #474c48;
   padding: 5px;
   /*position: relative;

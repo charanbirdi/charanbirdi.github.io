@@ -846,6 +846,36 @@
 </script>
 -->
 
+
+
+<script>
+
+  // 22 ji this is only to change color, just for FUNNNN
+
+  function updateBackgroundColor() {
+
+    const now = new Date();
+    const hour = now.getHours(); 
+    const minute = now.getMinutes(); 
+    //const seconds = now.getSeconds(); 
+
+      if (minute > 12) {
+          document.documentElement.style.setProperty('--color_dark', '#e0e5e1');
+          document.documentElement.style.setProperty('--color_light', '#f7f8f7'); 
+          } 
+      else {
+          document.documentElement.style.setProperty('--color_dark', '#eaeaea');
+          document.documentElement.style.setProperty('--color_light', '#ffffff'); 
+          }
+  }
+
+    // Call the function to initially set the color
+    updateBackgroundColor();
+    // Optionally, set a timer to regularly update the color
+    setInterval(updateBackgroundColor, 60); // Update every minute
+
+</script>
+
           
        
   </body>
