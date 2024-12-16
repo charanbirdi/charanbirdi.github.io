@@ -850,29 +850,84 @@
 
 <script>
 
-  // 22 ji this is only to change color, just for FUNNNN
+  // // CHange color with Time, 22 ji this is only to change color, just for FUNNNN
 
   function updateBackgroundColor() {
 
     const now = new Date();
     const hour = now.getHours(); 
     const minute = now.getMinutes(); 
-    //const seconds = now.getSeconds(); 
+    const seconds = now.getSeconds(); 
 
-      if (minute > 12) {
+    const var_con = minute;
+      
+      switch(true){
+        case (var_con > 0 && var_con <=10):
           document.documentElement.style.setProperty('--color_dark', '#e0e5e1');
-          document.documentElement.style.setProperty('--color_light', '#f7f8f7'); 
-          } 
-      else {
+          document.documentElement.style.setProperty('--color_light', '#f7f8f7');
+          break;
+        case (var_con > 10 && var_con <=20):
           document.documentElement.style.setProperty('--color_dark', '#eaeaea');
-          document.documentElement.style.setProperty('--color_light', '#ffffff'); 
-          }
+          document.documentElement.style.setProperty('--color_light', '#f7f8f7'); 
+          break;
+        case (var_con > 20 && var_con <=30):
+          document.documentElement.style.setProperty('--color_dark', '#fce8e8');
+          document.documentElement.style.setProperty('--color_light', '#fefcfc'); 
+          break;
+        case (var_con > 30 && var_con <=40):
+          document.documentElement.style.setProperty('--color_dark', '#fbf6e9');
+          document.documentElement.style.setProperty('--color_light', '#fbfbfb'); 
+          break;        
+        default:
+          document.documentElement.style.setProperty('--color_dark', '#e6f0ff');
+          document.documentElement.style.setProperty('--color_light', '#f9fbff');
+          break;
+      }
   }
 
     // Call the function to initially set the color
     updateBackgroundColor();
     // Optionally, set a timer to regularly update the color
-    setInterval(updateBackgroundColor, 60); // Update every minute
+    setInterval(updateBackgroundColor, 10*60*1000); // Unit in milliseconds
+
+</script>
+
+
+<script>
+
+// CHange color when refresh
+
+  $( document ).ready(function() {
+    var listOfClasses = [0,10,20,30,40];
+    var randomNum = Math.floor(Math.random() * listOfClasses.length); 
+
+    const var_con = listOfClasses[randomNum];
+    console.log(var_con);
+      
+      switch(true){
+        case (var_con > 0 && var_con <=10):
+          document.documentElement.style.setProperty('--color_dark', '#e0e5e1');
+          document.documentElement.style.setProperty('--color_light', '#f7f8f7');
+          break;
+        case (var_con > 10 && var_con <=20):
+          document.documentElement.style.setProperty('--color_dark', '#eaeaea');
+          document.documentElement.style.setProperty('--color_light', '#f7f8f7'); 
+          break;
+        case (var_con > 20 && var_con <=30):
+          document.documentElement.style.setProperty('--color_dark', '#fce8e8');
+          document.documentElement.style.setProperty('--color_light', '#fefcfc'); 
+          break;
+        case (var_con > 30 && var_con <=40):
+          document.documentElement.style.setProperty('--color_dark', '#fbf6e9');
+          document.documentElement.style.setProperty('--color_light', '#fbfbfb'); 
+          break;        
+        default:
+          document.documentElement.style.setProperty('--color_dark', '#e6f0ff');
+          document.documentElement.style.setProperty('--color_light', '#f9fbff');
+          break;
+      }
+    
+  });
 
 </script>
 
