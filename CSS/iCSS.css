@@ -351,18 +351,17 @@ li img{
 
 
 
+@page {
+  size: A4 portrait !important;
+  margin: 2mm !important;
+}
+
 
 @media print {
   
   *{
     print-color-adjust: exact;
     -webkit-print-color-adjust: exact;
-  }
-  
-
-  @page {
-    size: A4 portrait;
-    margin: 2mm !important;
   }
   
   #print {
