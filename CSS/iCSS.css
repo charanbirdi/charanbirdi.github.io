@@ -357,22 +357,24 @@ li img{
 .btn{
   background-color: #474c48;
   color: white;
-  /**padding: 10px 20px;
+  /**
   text-transform: uppercase;
-  margin: 10px;  
+  margin: 10px;     
+  font-size: 10px;
+   
   **/
   border: none;
-  border-radius: 5px;
+  border-radius: 3px;
   cursor: pointer;  
-  font-size: 12px;
   font-weight: 500;
+  padding: 5px;
   letter-spacing: 1px;  
   transition: 0.3s;
 }
 button:hover{
   background-color: var(--color_dark);
   color: white;
-  box-shadow: 0 0 10px #474c48, 0 0 40px #474c48, 0 0 40px #474c48;
+  box-shadow: 0 0 40px #474c48, 0 0 40px #474c48, 0 0 40px #474c48;
   transition-delay: 0.1s;
 }
 
