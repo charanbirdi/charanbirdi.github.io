@@ -148,8 +148,8 @@ div {
   width: 50%;  
   border-radius: 50%;
   padding: 10px;
-  min-width: 100px;
-  min-height: 114px;
+  min-width: 120px;
+  min-height: 137px;
   max-width: 150px;
   max-height: 171px;
   display: block;
@@ -158,6 +158,11 @@ div {
   filter: brightness(100%);
   filter: opacity(95%);
 }
+
+
+
+
+
 
 
 
@@ -347,6 +352,33 @@ li img{
   bottom: 0;
 }
 */
+
+
+.btn{
+  background-color: #474c48;
+  color: white;
+  /**padding: 10px 20px;
+  text-transform: uppercase;
+  margin: 10px;  
+  **/
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;  
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 1px;  
+  transition: 0.3s;
+}
+button:hover{
+  background-color: var(--color_dark);
+  color: white;
+  box-shadow: 0 0 10px #474c48, 0 0 40px #474c48, 0 0 40px #474c48;
+  transition-delay: 0.1s;
+}
+
+
+
+
 
 
 
