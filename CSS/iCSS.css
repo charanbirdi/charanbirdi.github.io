@@ -26,7 +26,7 @@ html{
   /*font-family: Calibri; Deafult microsoft*/
   /*font-family: San Francisco; default apple font*/
   letter-spacing: 0.6px;
-  font-size: 12px;
+  font-size: 11px;
 }
 
 
@@ -217,19 +217,17 @@ div {
   padding: 8px;
 }
 .aside_column2_main{
-  font-size: 16px !important;
+  font-size: 14px !important;
   padding: 0px !important;
 }
 
 .experience h5{
   font-size: 11px !important;
   font-weight: normal !important;
-  padding-top: 1em;
-  padding-bottom: 1em;
+  padding-top: 0.7em;
+  padding-bottom: 0.7em;
+  margin: 0px !important;
 }
-
-
-
 
 
 .main_heading{
@@ -380,6 +378,84 @@ button:hover{
 
 
 
+.hide h5{
+  margin: 0px !important;
+  padding-top: 0px !important;
+}
+
+
+
+
+
+
+
+
+
+/* ---for toggle button only----- */
+
+.switch-toggle {
+  height: 40px;
+  /**float: right;**/
+}
+
+.switch-toggle input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+  z-index: -2;
+}
+
+.switch-toggle input[type="checkbox"] + label {
+  position: relative;
+  display: inline-block;
+  width: 103px;
+  height: 40px;
+  border-radius: 20px;
+  margin: 0;
+  cursor: pointer;
+  box-shadow: inset -8px -8px 15px rgba(255,255,255,.6),
+              inset 10px 10px 10px rgba(0,0,0, .25);  
+}
+
+.switch-toggle input[type="checkbox"] + label::before {
+  position: absolute;
+  content: 'Detail';
+  font-size: 12px;
+  text-align: center;
+  line-height: 25px;
+  top: 8px;
+  left: 8px;
+  width: 50px;
+  height: 25px;
+  border-radius: 20px;
+  background-color: #d1dad3;
+  box-shadow: -3px -3px 5px rgba(255,255,255,.5),
+              3px 3px 5px rgba(0,0,0, .25);
+  transition: .15s ease-in-out;
+}
+
+.switch-toggle input[type="checkbox"]:checked + label::before {
+  left: 40%;
+  content: 'Short';
+  color: #fff;
+  background-color: #3552b2;
+  box-shadow: -3px -3px 5px rgba(255,255,255,.5),
+              3px 3px 5px #3552b2;
+}
+
+
+
+
+
+
+/* ---End of for toggle button only----- */
+
+
+
+
+
+
+
+
 
 
 
@@ -410,6 +486,15 @@ button:hover{
   a{
     text-decoration: none !important;
   }
+
+
+  /**
+  .hide{
+    display: none;
+  }
+    **/
+  
+
 }
 
 

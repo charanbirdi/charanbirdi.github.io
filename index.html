@@ -35,10 +35,23 @@
     
         <nav>
 
-          <button class="btn btn-print btn-sm btn-secondary" id="print" onclick="window.print()" style="float: right;">
-            <i class="fa fa-print" style="font-size:12px;"></i> 
-            Print/PDF
-          </button>
+
+          
+            <div class="switch-toggle">
+              <input type="checkbox" id="bluetooth" onclick="detail_short()" />
+              <label for="bluetooth"></label>
+            </div>
+
+        
+            
+            <button class="btn btn-print btn-sm btn-secondary" id="print" onclick="window.print()" style="float: right;">
+              <i class="fa fa-print" style="font-size:12px;"></i> 
+              Print/PDF
+            </button>
+
+        
+          
+          
 
           
           <h3> I am Charanjeet Singh Birdi. </h3>
@@ -150,12 +163,13 @@
               <h3>Skills</h3>
             </div>
             <ul>
+              <li>AI Agents Framework-CrewAI</li>
               <li>Keras, Numpy, Pandas, Pytorch,</li>
               <li>Python, VBA for Excel, XlWings</li>              
               <li>Machine learning, Deep Learning</li>
               <li>NLP, LLM, Transformers, Fine-Tuning LLMs</li>
               <li>Generative AI, RAG, AI Agents</li>
-              <li>CrewAI, Hugging Face <img src="images/Hugging Face.svg" width="20" height="20"> platform</li>
+              <li>Hugging Face <img src="images/Hugging Face.svg" width="20" height="20"> platform</li>
               <li>Time Series Modelling</li>
               <li>HTML, CSS & JavaScript</li>
               <li>Electrical System Study, ETAP</li>
@@ -295,7 +309,7 @@
           
           <div class="aside_row2">
             <div class="aside_column2">
-              <div><i class="fa-solid fa-laptop-code" style="font-size:20px;"></i></div>
+              <div><i class="fa-solid fa-laptop-code" style="font-size:18px;"></i></div>
             </div>
             <div class="aside_column2">
               <div class="aside_column2_main">Algorithmic/ML Trading Project with Live Market Data from AngelOne Broker (Live on AWS Cloud)</div>
@@ -304,34 +318,68 @@
                 <h5>Build Algorithmic Trading project for live market data using ANGELONE SmartAPI.
                   Machine Learning Algorithms and trading rules are used for placing trades on excel sheet and
                   alerts are sent to Telegram using API for keeping track.
-                  Following ML algorithms are used for predicting market direction based on ML models, trained on past 15 years of actual market data:</h5>          
-                <ul>
-                  <li>XGBoost, LR with advanced features to capture market complexity</li>
-                  <li>NEWS Sentiment analysis using LLM</li>
-                  <li>Complex trading rules for Option Strategies</li>
-                  <li>Monitoring using Telegram APIs</li>
-                </ul>
+                </h5>
+                
+                  <div class="hide">
+                  <h5>Following ML algorithms are used for predicting market direction based on ML models, trained on past 15 years of actual market data:</h5>          
+                
+                  <ul>
+                    <li>XGBoost, LR with advanced features to capture market complexity</li>
+                    <li>NEWS Sentiment analysis using LLM</li>
+                    <li>Complex trading rules for Option Strategies</li>
+                    <li>Monitoring using Telegram APIs</li>
+                  </ul>
+                </div>
               </div>
             </div>              
           </div>  
 
 
+
+          <div class="aside_row2">
+            <div class="aside_column2">
+              <div><i class="fa-solid fa-laptop-code" style="font-size:18px;"></i></div>
+            </div>
+            <div class="aside_column2">
+              <div class="aside_column2_main">Article Research and Summarization Using the AI Agents</div>
+              <div class="experience"> 
+                <h4><a href=https://github.com/charanbirdi/crewai_agentic_write_article_summary target="_blank">Github Link for Project</a></h4>
+                <h5>Developed an Agentic flow for article search using Web Search Agent-Serper, and article summarization with LLM.</h5> 
+                  
+                <div class="hide">
+                  <h5>Flow Structure is as following:</h5>          
+                  <ul>
+                    <li>OutlineCrew: This crew is responsible for generating the outline. It defines the structure based on the provided goal and topic.</li>
+                    <li>SummaryCrew: For each chapter outlined by the OutlineCrew, summary is created with detailed and coherent content.</li>
+                    <li>Final Product: After all chapters are written, the flow combines them into a single markdown file, creating a complete article ready to publish.</li>
+                  </ul>
+                </div>
+
+              </div>
+            </div>              
+          </div>  
+
+
+
+
           
 
           <div class="aside_row2">
             <div class="aside_column2">
-              <div><i class="fa-solid fa-laptop-code" style="font-size:20px;"></i></div>
+              <div><i class="fa-solid fa-laptop-code" style="font-size:18px;"></i></div>
             </div>
             <div class="aside_column2">
               <div class="aside_column2_main">Financial News Sentiment Analysis using Hugging Face Ecosystem</div>
               <div class="experience"> 
                 <h5>Stock market direction prediction based on financial news sentiment analysis (Positive, Nutral or Negative)</h5>          
-                <ul>
-                  <li>Data - Hugging Face Hub</li>
-                  <li>Subword Tokenization</li>
-                  <li>Pretrained DistilBERT Transformer Model</li> 
-                  <li>Fine-Tuning Transformers</li>                                   
-                </ul>
+                <div class="hide">
+                  <ul>
+                    <li>Data - Hugging Face Hub</li>
+                    <li>Subword Tokenization</li>
+                    <li>Pretrained DistilBERT Transformer Model</li> 
+                    <li>Fine-Tuning Transformers</li>                                   
+                  </ul>
+                </div>
               </div>
             </div>              
           </div>
@@ -344,16 +392,18 @@
           
           <div class="aside_row2">
             <div class="aside_column2">
-              <div><i class="fa-solid fa-laptop-code" style="font-size:20px;"></i></div>
+              <div><i class="fa-solid fa-laptop-code" style="font-size:18px;"></i></div>
             </div>
             <div class="aside_column2">
               <div class="aside_column2_main">Android Application Development</div>
               <div class="experience"> 
-                <h5>Develop android application (HOSPITO) for showing nearby Hospitals in offline and online mode from scratch using the following technologies by self-learning:</h5>          
-                <ul>
-                  <li>Java (basic level), SQLite & XML for graphic user interface</li>
-                  <li>Location based google API use for getting nearby hospital location</li>                
-                </ul>
+                <h5>Developed android application (HOSPITO) for showing nearby Hospitals in offline and online mode from scratch using the following technologies by self-learning:</h5>          
+                <div class="hide">
+                  <ul>
+                    <li>Java (basic level), SQLite & XML for graphic user interface</li>
+                    <li>Location based google API use for getting nearby hospital location</li>                
+                  </ul>
+                </div>
               </div>
             </div>              
           </div>
@@ -361,15 +411,18 @@
   
           <div class="aside_row2">
             <div class="aside_column2">
-              <div><i class="fa-solid fa-laptop-code" style="font-size:20px;"></i></div>
+              <div><i class="fa-solid fa-laptop-code" style="font-size:18px;"></i></div>
             </div>
             <div class="aside_column2">
               <div class="aside_column2_main">Website Design for Self Resume</div>
               <div class="experience"> 
                 <h4><a href=https://charanbirdi.github.io target="_blank">https://charanbirdi.github.io</a></h4>                          
-                <ul>
-                  <li>HTML, CSS & JavaScript</li>                                
-                </ul>
+                
+                <div class="hide">
+                  <ul>
+                    <li>HTML, CSS & JavaScript</li>                                
+                  </ul>
+                </div>
               </div>
             </div>              
           </div>
@@ -387,7 +440,7 @@
           <h6>(3 Months)</h6>
           <div class="aside_row2">
             <div class="aside_column2">
-              <div><i class="fa fa-code" style="font-size:20px;"></i></div>
+              <div><i class="fa fa-code" style="font-size:18px;"></i></div>
             </div>
             <div class="aside_column2">
               <div class="aside_column2_main">ML Internship</div>
@@ -395,9 +448,8 @@
                 <h4><a href=https://colab.research.google.com/drive/1J2YVeX41DRS6ZA8R93jgV379VNN57LMI target="_blank">Time Series Forecasting Colab</a></h4>
                 <h5>Participated in the Yo-Das program among over 100 contenders, securing the top 1% position.</h5>  
                       
-            
+                
                 <ul>
-                  <li>Constructed an XGBoost model for forecast the Market Clearing Price (MCP), incorporating various weather data parameters, holidays etc. Additionally, implemented day lags and 15-minute lags of power into the model.</li>
                   <li>Developed a Gradient boosting based model to forecast the Market Clearing Price (MCP) in IEX for the following day, employing 1-day ahead forecasting for five consecutive days and achieving an impressive MAPE as low as 3%.</li>
                 </ul>
               </div>
@@ -412,7 +464,7 @@
         
           
         <div class="main_heading">
-          <h3>Experiences</h3>            
+          <h3>Industrial Experience</h3>            
         </div>
 
         <!--img width="200" height="100" src="images/Samsung Engineering.svg"-->
@@ -426,17 +478,20 @@
 
         <div class="aside_row2">
           <div class="aside_column2">
-            <div><i class="fa fa-sitemap" style="font-size:20px;"></i></div>
+            <div><i class="fa fa-sitemap" style="font-size:18px;"></i></div>
           </div>
           <div class="aside_column2">
             <div class="aside_column2_main">Electrical ITB Analysis using RAG</div>
             <div class="experience"> 
               <h5>Working on prototype project to build an AI-driven system that automates the analysis and evaluation of ITB documents for electrical projects. This will facilitate faster decision-making, reduce human error, and ensure compliance with project requirements, industry standards, and legal regulations.</h5>          
-              <ul>
-                <li>Utilizing RAG, the system will retrieve relevant external knowledge</li>
-                <li>Summarize the documents</li>
-                <li>The system will extract key information from electrical ITB documents.</li>                                
-              </ul>
+              
+              <div class="hide">
+                <ul>
+                  <li>Utilizing RAG, the system will retrieve relevant external knowledge</li>
+                  <li>Summarize the documents</li>
+                  <li>The system will extract key information from electrical ITB documents.</li>                                
+                </ul>
+              </div>
             </div>
           </div>              
         </div>
@@ -447,16 +502,18 @@
 
         <div class="aside_row2">
           <div class="aside_column2">
-            <div><i class="fa fa-sitemap" style="font-size:20px;"></i></div>
+            <div><i class="fa fa-sitemap" style="font-size:18px;"></i></div>
           </div>
           <div class="aside_column2">
             <div class="aside_column2_main">ETAP Automation using ETAP Python API</div>
             <div class="experience"> 
               <h5>I am working on a project to develop an automation tool in Python for ETAP Automation, with the objective of reducing man-hours by 50% while minimizing human errors.</h5>          
-              <ul>
-                <li>ETAP Modelling/Updation Automation</li>
-                <li>Report extraction Automation</li>                
-              </ul>
+              <div class="hide">
+                <ul>
+                  <li>ETAP Modelling/Updation Automation</li>
+                  <li>Report extraction Automation</li>                
+                </ul>
+              </div>
             </div>
           </div>              
         </div>
@@ -464,17 +521,19 @@
 
         <div class="aside_row2">
           <div class="aside_column2">
-            <div><i class="fa fa-sitemap" style="font-size:20px;"></i></div>
+            <div><i class="fa fa-sitemap" style="font-size:18px;"></i></div>
           </div>
           <div class="aside_column2">
             <div class="aside_column2_main">Automation of ETAP Model Verification</div>
             <div class="experience"> 
               <h5>Developed an Excel VBA Tool for Verifying ETAP Models Against Load Lists and Cable Schedules:</h5>          
-              <ul>
-                <li>Ensured ETAP model alignment with the Load List and highlighted required changes</li>
-                <li>Basic Load flow checking of ETAP model with Load List analysis</li>
-                <li>Cable model checking with Cable Schedule</li>                
-              </ul>
+              <div class="hide">
+                <ul>
+                  <li>Ensured ETAP model alignment with the Load List and highlighted required changes</li>
+                  <li>Basic Load flow checking of ETAP model with Load List analysis</li>
+                  <li>Cable model checking with Cable Schedule</li>                
+                </ul>
+              </div>
             </div>
           </div>              
         </div>
@@ -484,21 +543,23 @@
 
         <div class="aside_row2">
           <div class="aside_column2">
-            <div><i class="fa fa-sitemap" style="font-size:20px;"></i></div>
+            <div><i class="fa fa-sitemap" style="font-size:18px;"></i></div>
           </div>
           <div class="aside_column2">
             <div class="aside_column2_main">VBA Tools for Excel</div>
             <div class="experience"> 
               <h5>Developed a number of specialized VBA tools for electrical engineering calculations which are used for various projects, few are listed as following:</h5>          
-              <ul>
-                <li>Developed and implemented the ETAP model checking process, extracting relevant data from the model to ensure accuracy; streamlined the verification process, enhancing overall efficiency.</li>
-                <li>Cable Sizing tool for IEC</li>
-                <li>Tray, Trench Sizing tool</li>
-                <li>Drum Sizing report preparation</li>
-                <li>BOM calculation</li>
-                <li>Interconnection diagram</li>
-                <li>Checking and synchronization of various documents</li>
-              </ul>
+              <div class="hide">
+                <ul>
+                  <li>Developed and implemented the ETAP model checking process, extracting relevant data from the model to ensure accuracy; streamlined the verification process, enhancing overall efficiency.</li>
+                  <li>Cable Sizing tool for IEC</li>
+                  <li>Tray, Trench Sizing tool</li>
+                  <li>Drum Sizing report preparation</li>
+                  <li>BOM calculation</li>
+                  <li>Interconnection diagram</li>
+                  <li>Checking and synchronization of various documents</li>
+                </ul>
+              </div>
             </div>
           </div>              
         </div>
@@ -511,21 +572,24 @@
 
         <div class="aside_row2">
           <div class="aside_column2">
-            <div><i class="fa fa-sitemap" style="font-size:20px;"></i></div>
+            <div><i class="fa fa-sitemap" style="font-size:18px;"></i></div>
           </div>
           <div class="aside_column2">
             <div class="aside_column2_main">ETAP System Study for Electrical Engineering</div>
             <div class="experience"> 
-              <h5>I conducted system study analyses for several projects, proposals, and FEEDs, as outlined below:</h5>          
-              <ul>
-                <li>Load Flow Study</li>
-                <li>Short Circuit Study</li>
-                <li>Motor Starting Study</li>
-                <li>Transient Stability Study</li>
-                <li>Arc Flash Study</li>
-                <li>Harmonic Analysis Study</li>
-                <li>Relay Coordination Study</li>              
-              </ul>
+              <h5>I conducted system study analyses for several projects, proposals, and FEEDs:</h5>          
+              <div class="hide">
+                <h5>Studies are as following:</h5>
+                <ul>
+                  <li>Load Flow Study</li>
+                  <li>Short Circuit Study</li>
+                  <li>Motor Starting Study</li>
+                  <li>Transient Stability Study</li>
+                  <li>Arc Flash Study</li>
+                  <li>Harmonic Analysis Study</li>
+                  <li>Relay Coordination Study</li>              
+                </ul>
+              </div>
             </div>
           </div>              
         </div>
@@ -968,6 +1032,35 @@
   });
 
 </script>
+
+
+<!--alert(hiddenDiv[0].innerHTML); -->
+
+<script>
+
+  function detail_short() {
+    var hiddenDiv = document.getElementsByClassName("hide");
+    var toggleButton = document.getElementById("bluetooth");
+     
+    
+    if (toggleButton.checked) {
+      for(var i =0; i< hiddenDiv.length; i++){
+        hiddenDiv[i].style.display = "none";
+      }
+      
+
+    } else {
+      for(var i =0; i< hiddenDiv.length; i++){
+        hiddenDiv[i].style.display = "block";
+      }
+    }
+
+  }
+
+</script>
+
+
+
 
           
        
