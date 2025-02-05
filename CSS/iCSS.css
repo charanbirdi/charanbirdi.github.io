@@ -368,6 +368,8 @@ li img{
   padding: 5px;
   letter-spacing: 1px;  
   transition: 0.3s;
+  margin-top: 6px;
+  margin-right: 0px;
 }
 button:hover{
   background-color: var(--color_dark);
@@ -394,8 +396,10 @@ button:hover{
 /* ---for toggle button only----- */
 
 .switch-toggle {
-  height: 40px;
-  /**float: right;**/
+  height: 35px;
+  float: right;
+  margin-top: 0px;
+  margin-right: 10px;
 }
 
 .switch-toggle input[type="checkbox"] {
@@ -407,13 +411,14 @@ button:hover{
 .switch-toggle input[type="checkbox"] + label {
   position: relative;
   display: inline-block;
-  width: 103px;
-  height: 40px;
+  width: 90px;
+  height: 35px;
   border-radius: 20px;
   margin: 0;
   cursor: pointer;
+  /*border: 1px solid #d1dad3;*/
   box-shadow: inset -8px -8px 15px rgba(255,255,255,.6),
-              inset 10px 10px 10px rgba(0,0,0, .25);  
+              inset 5px 5px 5px rgba(0,0,0, .25);  
 }
 
 .switch-toggle input[type="checkbox"] + label::before {
@@ -422,19 +427,19 @@ button:hover{
   font-size: 12px;
   text-align: center;
   line-height: 25px;
-  top: 8px;
+  top: 5px;
   left: 8px;
   width: 50px;
   height: 25px;
   border-radius: 20px;
-  background-color: #d1dad3;
+  background-color: var(--color_dark);
   box-shadow: -3px -3px 5px rgba(255,255,255,.5),
               3px 3px 5px rgba(0,0,0, .25);
   transition: .15s ease-in-out;
 }
 
 .switch-toggle input[type="checkbox"]:checked + label::before {
-  left: 40%;
+  left: 35%;
   content: 'Short';
   color: #fff;
   background-color: #3552b2;
@@ -475,6 +480,10 @@ button:hover{
   }
   
   #print {
+    display: none;
+  }
+
+  .switch-toggle {
     display: none;
   }
 
